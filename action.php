@@ -7,13 +7,14 @@ $to = "maxxie114@mxpersonal.com";
 
 $subject = "Email from " . $email . " via mxpersonal.com.";
 
-$header = "From: ubuntu@mxpersonal.com";
+$header = "From: no-reply@mxpersonal.com";
+$status = mail($to,$subject,$msg,$header);
 
-$status = mail($to,$subject,$msg);
+// echo $status ? "Mail sent" : "Mail failed";
 
-echo $email . "<br>";
-echo $msg . "<br>";
+if($status) {
+    echo "<h1>Your message has been sent to Max Xie!<h1>";
+} else {
+    echo "<h1>System Error, the message has failed to be sent :(<h1>";
+}
 
-echo $status ? "Mail sent" : "Mail failed";
-
-echo "<h1>Your message has been sent to Max Xie!<h1>";
