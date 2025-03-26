@@ -1,82 +1,162 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Max's Blog</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-	<body>
-   <div class="header">
-	</br></br>
-	   <h1><font color="white">MAX'S BLOG</font></h1>
-   </div>	
-   <div class="nav">
-  	<!--So this is how linking is made....-->
-  	<ul>
-	  <li><a href="#aboutMe">About Me</a></li>
-	  <li><a href="#moreAboutMe">More About Me</a></li>
-	  <li><a href="#contact">Contact me</a></li>
-	  <li><a href="http://maxxie-en.weebly.com">My other website</a></li>
-	  <li><a href="http://maxxie-ch.weebly.com">Chinese website</a></li>
-	  <li><a href="https://github.com/maxxie114">My Github</a></li>
-	  <li><a href="https://2b2tmcpe.org">2B2TMCBE</a></li>
-  	</ul>
-   </div>
-  
- 	 <!-- Making a website yay!-->
-   <div class="main">
-	   <section id="aboutMe">
-		<h1>ABOUT ME</h1>
-		<h4>A student and a programming enthusiast.</h4>
-		<p>
-		</br>
-		I am a high school student from China. But now I study in the US. I love science and computer programming. I also love history and philosophy. I made many different projects in the field of computer science, this website is one project. I also have my own email server and email address <b>(it will be listed in the CONTACT ME zone.)</b>and my own github. I plan to major in computer science and be a software developer in the future!
-	   </p>
-		</h6>
-	   </section>
-		<hr>
-	   <section id="moreAboutMe">
-		<h1>MORE ABOUT ME</h1>
-		<p>
-		</br>
-		I Speak:
-		</br>
-		<font color="red">普通话.</font>
-		</br>
-		<font color="green">广东话.</font>
-		</br>
-		<font color="blue">English</font>
-		</br></br></br>
-		<font color="orange">Y un poco de español, tambien :)</font>
-	</p></br>
-		</b>
-		<h3>I also Love Coding!</h3>		
-		<b>
-			<font color="red">My favorite programming language is java. But I can also code in PHP, Python, C# and HTML/CSS, I am currently learning more about C#, Golang, C，and C++ !</font>
-		</b>
-		</br></br>
-		<hr>
-	   </section>
-		<section id="contact">
-		<h1>CONTACT ME</h1>
-		<b>
-			</br>If you have any questions, or if you want to talk to me, feel free to email me at<font color="light_green"> maxxie114@mxpersonal.com</font></br></br></br>
-		</b>
-		</section>
-		<div class="response">
-			<b>Or you can contact me here:</b>
-			<form action="action.php" method="post" target="_self">
-				You email: <input type="text" name="email">
-				</br>
-				Message: <textarea name="message" rows="5"></textarea>
-				</br>
-				<input type="submit" value="Send">
-			</form>
-		</div>
-		<div class="cpr">
-			<h4>© Copyright Max Xie 2018.</h4></br>
-		</div>
-	</div>
-   </body>
-</html>
+<html lang="en" style="background: #212529;">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>mxpersonal_site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="transform: perspective(0px);filter: blur(0px);">
+    <section class="px-5 py-5" style="background: url(&quot;assets/img/mxpersonal_background.jpeg&quot;);background-size: cover;">
+        <div class="text-center px-5 py-5" style="background: rgba(255,214,0,0);">
+            <h1 class="text-white fw-bold my-5" style="background: rgba(255,255,255,0);">MAX'S BLOG<br></h1>
+            <p class="text-white">This is my own personal website, in this website you can learn more about who I am.</p>
+        </div>
+    </section>
+    <nav class="navbar navbar-light navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about-me">ABOUT ME</a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#my-other-websites">MY OTHER WEBSITES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qubemc">QUBEMC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#2b2tmcpe">2B2TMCPE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-me">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="about-me" class="mt-5">
+        <div class="row mt-5 mb-5 m-5">
+            <div class="col col-12 col-md-5 text-center"><img class="img-fluid" src="assets/img/max_selfie.jpg" style="width: 240px;"></div>
+            <div class="col col-12 col-md-5">
+                <h4 class="display-5 text-start"><strong>About Me</strong></h4>
+                <p class="text-start">I am a university student from China. But now I study in the US. I love science and computer programming. I also love history and philosophy. I made many different projects in the field of computer science, this website is one project. I also have my own email server and email address&nbsp;<strong>(it will be listed in the CONTACT ME zone.)&nbsp;</strong>and my own Github Page. I plan to major in Linguistics and be a computational linguist in the future! I go by the nick name maxxie114 online.<br></p>
+            </div>
+        </div>
+    </div>
+    <section class="py-3 bg-dark"></section>
+    <div class="bg-dark">
+        <h1 class="text-white text-center mb-3">Languages that I speak</h1>
+        <div class="card-group" style="margin-left: 100px;margin-right: 100px;">
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/chinese.png" style="height: 184.938px;">
+                <div class="card-body">
+                    <h4 class="card-title">Chinese<br></h4>
+                    <p class="card-text">I was born in China, and I had education in China for over 14 years, so I am fluent in both Cantonese and Mandarin.</p>
+                </div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/hardest-part-learning-english.jpg" style="height: 186.156px;">
+                <div class="card-body">
+                    <h4 class="card-title">English<br></h4>
+                    <p class="card-text">I am currently studying in UCSC in California, and I have been in the United States for over 5 years, so I am completely fluent in English.</p>
+                </div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/1000x700-spanish-1-790x310.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Spanish</h4>
+                    <p class="card-text">I learned Spanish for over two years in high school, but I stopped after I entered the university. So I am not fluent in Spanish, but I can handle some basic questions, and simple conversations in Spanish.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row me-3">
+            <div class="col col-12">
+                <h1 class="text-white text-center mt-3">Languages that I code in</h1>
+                <div class="card bg-dark m-5">
+                    <div class="card-body bg-white m-3"><i class="fab fa-java" style="font-size: 30px;"></i>
+                        <h4 class="card-title">Java</h4>
+                        <p class="card-text">I learned Java in 2015 at UC Berkeley in a Summer program, and I loved coding in Java ever since. I made multiple projects in Java, including a game, a discord bot, and multiple different Minecraft server plugins. Since I operate a Minecraft server and a gaming company, Java is also a daily thing for me.</p>
+                    </div>
+                    <div class="card-body bg-white m-3"><i class="fab fa-python" style="font-size: 30px;"></i>
+                        <h4 class="card-title">Python</h4>
+                        <p class="card-text">I learned python in 2019 at Berkeley Summer session, and I loved python ever since. Python is a very powerful language in my opinion, and countless amount of projects, including almost all machine learning projects are done in python. I use python for a lot of projects and research as well. Including some web development using flask framework, some Machine learning research using scikit-learn and tensorflow. As well as some automation or calculation scripts. Most of my python projects are available at my&nbsp;<a href="https://github.com/maxxie114" target="_blank">Github</a>&nbsp;page.</p>
+                    </div>
+                    <div class="card-body bg-white m-3"><i class="fas fa-code" style="font-size: 30px;"></i>
+                        <h4 class="card-title">C</h4>
+                        <p class="card-text">I learned C programming in UCSC in 2020, and I have created multiple projects in C programming language, including Hamming Code, Huffman Data Compression, and solving traveling salesman problem via DFS algorithm.</p>
+                    </div>
+                    <div class="card-body bg-white m-3"><i class="fab fa-html5" style="font-size: 30px;"></i>
+                        <h4 class="card-title">HTML/CSS</h4>
+                        <p class="card-text">I am not fluent in HTML/CSS, however, I am experienced with HTML/CSS coding, and I made multiple projects using HTML/CSS and bootstrap frameworks. This project is one of the projects that I made using bootstrap 5 framework.</p>
+                    </div>
+                    <div class="card-body bg-white m-3"><i class="fab fa-php" style="font-size: 30px;"></i>
+                        <h4 class="card-title">PHP</h4>
+                        <h4 class="card-title"></h4>
+                        <p class="card-text">I am not fluent in PHP, however I had one year of experience coding PHP Plugins for Minecraft Bedrock Edition, Pocketmine-MP server software. The plugin is available on&nbsp;my&nbsp;<a href="https://github.com/maxxie114" target="_blank">Github</a>&nbsp;page.<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="my-other-websites" class="m-5">
+        <h4 class="display-5 text-center"><strong>My Other Websites</strong></h4>
+        <p class="text-center m-5">Aside from this website, I also made multiple different websites that introduced me more in different aspects, here are a list of all the websites that I made.</p>
+        <div class="card-group m-5">
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/english_site.png" style="height: 193.531px;">
+                <div class="card-body">
+                    <h4 class="card-title">English Weebly Blog</h4>
+                    <p class="card-text">I blog that I made on weebly a very long time ago.</p><a class="btn btn-primary" role="button" href="http://maxxie-en.weebly.com/" target="_blank">Check It Out</a>
+                </div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/chinese_site.png" style="height: 199.828px;">
+                <div class="card-body">
+                    <h4 class="card-title">Chinese Weebly Blog</h4>
+                    <p class="card-text">A Chinese version of the blog that I made on weebly a very long time ago, the contents are exactly the same as the English blog.</p><a class="btn btn-primary" role="button" href="http://maxxie-ch.weebly.com/" target="_blank">Take a look</a>
+                </div>
+            </div>
+            <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/self_intro.jpg" style="height: 198.234px;">
+                <div class="card-body">
+                    <h4 class="card-title">Self Introduction Website</h4>
+                    <p class="card-text">A website that where I wrote my entire self-introduction just for people to know more about me.</p><a class="btn btn-primary" role="button" href="self_introduction_max_en.html" target="_blank">Let's Go!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="2b2tmcpe" class="bg-dark p-5">
+        <div class="row">
+            <div class="col col-12 col-md-6 text-center"><img class="img-fluid" src="assets/img/icon-1to1.jpg" style="height: 312px;"></div>
+            <div class="col col-12 col-md-6">
+                <h1 class="text-white"><strong>2B2TMCPE</strong></h1>
+                <p class="text-white">2b2tmcpe is a Minecraft Anarchy server that I operate under QubeMC LLC.<br><br>This is a minecraft bedrock edition server that is based on 2b2t.org, and it is complete anarchy. On this server you can do whatever you want: kill players, spam, trap spawn, hack, fly, poison players, loot, mine. But be aware that other players will also do the same, and you&nbsp;<strong>will</strong>&nbsp;die, a lot. Good luck! For more challenges, we also have a full vanilla version of the server, where everything works, but there are no commands. (Disclaimer, we have nothing to do with the actual 2b2t.org server)<br></p><a class="btn btn-primary" role="button" href="https://2b2tmcpe.org/" target="_blank">Check it Out</a>
+            </div>
+        </div>
+    </div>
+    <div id="qubemc" class="bg-white p-5">
+        <div class="row">
+            <div class="col col-12 col-md-6 text-center"><img class="img-fluid" src="assets/img/lobby_logo.png" style="height: 257.703px;"></div>
+            <div class="col col-12 col-md-6">
+                <h1 class="text-dark"><strong>QubeMC</strong></h1>
+                <p class="text-dark">QubeMC is a Minecraft Gaming and Hosting company that I own and that I operate.<br><br>We are an upcoming Minecraft Bedrock Server Network that will offer seven different game modes, including Minigame, Faction, Skyblock, Anarchy, Creative, and Survival. Additionally, we will also offer cheap and reliable Minecraft Server Hosting for both bedrock and java edition. For those who want a website, we will also offer cheap website hosting for you!<br><br></p><a class="btn btn-primary" role="button" href="https://www.qubemc.com/" target="_blank">Check it Out</a>
+            </div>
+        </div>
+    </div>
+    <div id="contact-me" class="p-5 bg-dark">
+        <h1 class="text-white text-center">Contact Me</h1>
+        <p class="text-white text-center">My email address: maxxie114@mxpersonal.com<br>My Business Email Address: maxxie114@qubemc.com<br>My Business Phone Number:&nbsp;(415) 364-8613<br>My Snapchat: xie.max<br>My Discord: maxxie115#0021</p>
+        <div class="row">
+            <div class="col text-center"><a href="https://www.instagram.com/maxxie114/" target="_blank"><i class="fa fa-instagram text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://twitter.com/Maxxie114" target="_blank"><i class="fa fa-twitter-square text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://www.linkedin.com/in/peixi-max-xie-90a165165/" target="_blank"><i class="fa fa-linkedin-square text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://www.youtube.com/channel/UCqXS_K_fD2F-ABgSntqWdag" target="_blank"><i class="fa fa-youtube-play text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://github.com/maxxie114" target="_blank"><i class="fa fa-github-square text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://gitlab.2b2tmcpe.org/maxxie114" target="_blank"><i class="fa fa-gitlab text-white" style="font-size: 30px;"></i></a></div>
+            <div class="col text-center"><a href="https://www.facebook.com/max.xie.7587" target="_blank"><i class="fa fa-facebook-square text-white" style="font-size: 30px;"></i></a></div>
+        </div>
+    </div>
+    <div class="pt-5" style="background: #212529;">
+        <p class="ps-3" style="color: rgb(255,255,255);">Copyright © 2018-2021 Max Xie. All rights reserved.<br></p>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
