@@ -6,157 +6,168 @@
     <title>Resume - Peixi Xie</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        .resume-section {
-            margin-bottom: 2rem;
-        }
-        .resume-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .resume-header h1 {
-            margin-bottom: 0.5rem;
-        }
-        .resume-header p {
-            margin-bottom: 0.25rem;
-        }
-        .job {
-            margin-bottom: 1.5rem;
-        }
-        .job-title {
-            font-weight: bold;
-        }
-        .job-date {
-            float: right;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Peixi "Max" Xie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact</a>
-                    </li>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Resume — Peixi "Max" Xie</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <style>
+            /* Artistic resume styles */
+            body { background: linear-gradient(180deg,#f7f9fc 0%, #ffffff 40%); }
+            .resume-shell { max-width: 1100px; margin: 3rem auto; box-shadow: 0 8px 30px rgba(35,40,50,0.08); border-radius: 12px; overflow: hidden; }
+            .resume-left { background: #0b1220; color: #fff; padding: 2.5rem; }
+            .resume-left .avatar { width:160px; height:160px; border-radius:50%; object-fit:cover; border:4px solid rgba(255,255,255,0.12); }
+            .name { font-size:1.6rem; font-weight:700; margin-top:1rem; }
+            .title { color:#9fb3d6; margin-bottom:0.75rem; }
+            .contact a { color:#cfe6ff; text-decoration:none; }
+            .section-title { color:#0b1220; border-left:4px solid #0b66ff; padding-left:0.75rem; margin-bottom:1rem; }
+            .timeline { position:relative; padding-left:1.25rem; }
+            .timeline:before { content:''; position:absolute; left:0.25rem; top:0; bottom:0; width:3px; background:linear-gradient(#0b66ff,#7db8ff); border-radius:2px; }
+            .timeline-item { position:relative; margin-bottom:1.5rem; padding-left:1rem; }
+            .timeline-item:before { content:''; position:absolute; left:-0.3rem; top:6px; width:12px; height:12px; border-radius:50%; background:#fff; border:3px solid #0b66ff; }
+            .job-title { font-weight:700; color:#14223b; }
+            .job-meta { color:#6c7a89; font-size:0.9rem; }
+            .skill-badge { display:inline-block; margin:0.15rem 0.25rem; background:#eef6ff; color:#073566; padding:0.35rem 0.6rem; border-radius:999px; font-weight:600; font-size:0.85rem; }
+            .left-list { list-style:none; padding:0; margin-top:1rem; }
+            .left-list li { margin:0.6rem 0; color:#dbeeff; }
+            @media (max-width: 768px){ .resume-shell{ margin:1rem; } .resume-left{ text-align:center } .timeline:before{ left:0.5rem } }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Peixi "Max" Xie</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="resume-shell d-flex flex-column flex-md-row">
+            <aside class="resume-left col-md-4">
+                <div class="text-center">
+                    <img src="assets/img/max_selfie.jpg" alt="Max selfie" class="avatar">
+                    <div class="name">Peixi "Max" Xie</div>
+                    <div class="title">Software Developer &amp; Computational Linguist</div>
+                    <div class="contact mt-3">
+                        <div><i class="fas fa-envelope me-2"></i><a href="mailto:maxxie114@gmail.com">maxxie114@gmail.com</a></div>
+                        <div><i class="fas fa-phone me-2"></i>(415) 941-9368</div>
+                        <div class="mt-2"><a href="Peixi Xie - CV (industrial).pdf" class="btn btn-sm btn-outline-light" style="font-weight:600;" target="_blank"><i class="fas fa-download me-1"></i>Download Resume</a></div>
+                    </div>
+                </div>
+
+                <hr style="border-color: rgba(255,255,255,0.06)">
+
+                <h6 class="text-uppercase" style="color:#9fb3d6">Quick Skills</h6>
+                <div>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">C</span>
+                    <span class="skill-badge">JavaScript</span>
+                </div>
+
+                <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Tools</h6>
+                <ul class="left-list">
+                    <li><i class="fas fa-code me-2"></i>Git / GitHub</li>
+                    <li><i class="fas fa-database me-2"></i>pandas, numpy</li>
+                    <li><i class="fas fa-brain me-2"></i>NLTK, spaCy</li>
+                    <li><i class="fab fa-docker me-2"></i>Docker</li>
                 </ul>
-            </div>
-        </div>
-    </nav>
 
-    <main id="content" class="container mt-5 pt-5">
-        <div class="resume-header">
-            <h1>Peixi Xie</h1>
-            <p>maxxie114@gmail.com | (415) 941-9368</p>
-            <p>
-                <a href="https://www.linkedin.com/in/peixi-xie/" target="_blank">LinkedIn</a> | 
-                <a href="https://www.mxpersonal.com/" target="_blank">mxpersonal.com</a>
-            </p>
-            <a href="Peixi Xie - CV (industrial).pdf" class="btn btn-primary" target="_blank">
-                <i class="fas fa-download"></i> Download PDF
-            </a>
-        </div>
-
-        <div class="resume-section">
-            <h3>Profile</h3>
-            <p>Recent graduate with a B.A in Linguistics from the University of California, Santa Cruz. Experienced in linguistics research, computer programming, and startup management. Adept in Natural Language Processing (NLP), Computational Linguistics, and AI applications. Known for strong leadership, communication, and analytical skills. Actively seeking opportunities in the fields of AI and NLP that leverage linguistic expertise.</p>
-        </div>
-
-        <div class="resume-section">
-            <h3>Employment</h3>
-            <div class="job">
-                <div class="job-title">Research Assistant <span class="job-date">Sep 2022 - July 2023</span></div>
-                <div>University of California, Santa Cruz | Santa Cruz, CA</div>
-                <ul>
-                    <li>Collaborated with Professor Jaye Padgett on advanced linguistics research projects.</li>
-                    <li>Set up and optimized an Ultrasound System for phonetic experiments.</li>
-                    <li>Developed custom JavaScript code to facilitate experimental procedures.</li>
-                    <li>Successfully conducted experiments and analyzed data, which were presented at the Linguistics Undergraduate Research Conference 2023.</li>
-                    <li>Contributed to the academic community by co-authoring research findings.</li>
+                <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Languages</h6>
+                <ul class="left-list">
+                    <li>English (Fluent)</li>
+                    <li>Mandarin (Native)</li>
+                    <li>Cantonese (Native)</li>
+                    <li>Spanish (Conversational)</li>
                 </ul>
-            </div>
-            <div class="job">
-                <div class="job-title">Founder & Lead Developer <span class="job-date">Jun 2020 - Present</span></div>
-                <div>QubeMC LLC | San Francisco, CA</div>
-                <ul>
-                    <li>Founded and operated QubeMC LLC, providing versatile and reliable hosting solutions and comprehensive software development services.</li>
-                    <li>Lead the development of custom software applications, enhancing user experience and meeting client business needs.</li>
-                    <li>Manage website hosting and design services, ensuring robust and attractive web presence for clients.</li>
-                    <li>Offer comprehensive technical support, resolving server and software issues promptly to maintain high customer satisfaction.</li>
-                    <li>Oversee business operations including project management, budget planning, and strategic marketing initiatives.</li>
-                    <li>Implemented innovative solutions driving company growth and customer satisfaction.</li>
-                </ul>
-            </div>
-             <div class="job">
-                <div class="job-title">Website Manager <span class="job-date">Jan 2019 - Mar 2020</span></div>
-                <div>George Lister | San Francisco, CA</div>
-                <ul>
-                    <li>Managed and revamped the website for George Lister and Bay Area Alexander Technique using Squarespace.</li>
-                    <li>Updated and organized web content, employing technologies such as JSON-T for dynamic content structuring.</li>
-                    <li>Enhanced user experience by restructuring site layout and integrating multimedia elements.</li>
-                    <li>Collaborated closely with stakeholders to ensure the website met functional and aesthetic requirements.</li>
-                    <li>Developed basic web development skills in HTML, CSS, and JavaScript.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <div class="job-title">Sermon Translator <span class="job-date">Jan 2018 - Sep 2019</span></div>
-                <div>The Episcopal Church Of The Incarnation | San Francisco, CA</div>
-                <ul>
-                    <li>Translated English sermons into Chinese, ensuring linguistic and cultural accuracy.</li>
-                    <li>Demonstrated proficiency in bilingual language skills (English and Chinese).</li>
-                    <li>Facilitated effective communication within a multicultural community.</li>
-                    <li>Developed strong attention to detail and linguistic analysis skills.</li>
-                </ul>
-            </div>
+            </aside>
+
+            <section class="p-4 flex-fill">
+                <div class="container-fluid">
+                    <div class="mb-4">
+                        <h2 class="section-title">Profile</h2>
+                        <p>Recent graduate with a B.A in Linguistics from the University of California, Santa Cruz. Experienced in linguistics research, computer programming, and startup management. Adept in Natural Language Processing (NLP), Computational Linguistics, and AI applications. Known for strong leadership, communication, and analytical skills. Actively seeking opportunities in the fields of AI and NLP that leverage linguistic expertise.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h2 class="section-title">Employment</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="job-title">Research Assistant <span class="job-meta">• Sep 2022 - July 2023</span></div>
+                                <div class="job-meta">University of California, Santa Cruz — Santa Cruz, CA</div>
+                                <ul>
+                                    <li>Collaborated with Professor Jaye Padgett on advanced linguistics research projects.</li>
+                                    <li>Set up and optimized an Ultrasound System for phonetic experiments.</li>
+                                    <li>Developed custom JavaScript code to facilitate experimental procedures.</li>
+                                    <li>Presented experiments and analysis at the Linguistics Undergraduate Research Conference 2023.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="job-title">Founder &amp; Lead Developer <span class="job-meta">• Jun 2020 - Present</span></div>
+                                <div class="job-meta">QubeMC LLC — San Francisco, CA</div>
+                                <ul>
+                                    <li>Founded QubeMC LLC, providing hosting and software development services.</li>
+                                    <li>Lead development of custom software and managed hosting infrastructure.</li>
+                                    <li>Oversaw business operations including project management and strategic planning.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="job-title">Website Manager <span class="job-meta">• Jan 2019 - Mar 2020</span></div>
+                                <div class="job-meta">George Lister — San Francisco, CA</div>
+                                <ul>
+                                    <li>Managed and revamped websites; implemented JSON-T structured content.</li>
+                                    <li>Improved UX and integrated multimedia for better engagement.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="job-title">Sermon Translator <span class="job-meta">• Jan 2018 - Sep 2019</span></div>
+                                <div class="job-meta">The Episcopal Church Of The Incarnation — San Francisco, CA</div>
+                                <ul>
+                                    <li>Translated English sermons into Chinese with cultural accuracy.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h2 class="section-title">Education</h2>
+                        <div class="job-title">B.A in Linguistics <span class="job-meta">• Sep 2019 - June 2024</span></div>
+                        <div class="job-meta">University of California Santa Cruz — Santa Cruz, CA</div>
+                        <p><strong>Relevant Courses:</strong> Phonology, Phonetics, Semantics, Syntax, Psycholinguistics, Computational Linguistics, Natural Language Processing, Machine Learning, Python Programming, Java Programming, C Programming</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h2 class="section-title">Skills &amp; Tools</h2>
+                        <p>Programming: Python, Java, C, JavaScript, HTML/CSS</p>
+                        <p>Tools &amp; Libraries: Git/GitHub, JSON, NLTK, spaCy, pandas, numpy, Docker</p>
+                        <p>Machine Learning: Experience with standard pipelines and research applications in NLP.</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <div class="resume-section">
-            <h3>Education</h3>
-            <div class="job">
-                <div class="job-title">B.A in Linguistics <span class="job-date">Sep 2019 - June 2024</span></div>
-                <div>University of California Santa Cruz | Santa Cruz, CA</div>
-                <p><strong>Relevant Courses:</strong> Phonology, Phonetics, Semantics, Syntax, Psycholinguistics, Computational Linguistics, Natural Language Processing, Machine Learning, Python Programming, Java Programming, C Programming</p>
-            </div>
-        </div>
+        <footer class="text-center p-3 mt-4">
+            <p>&copy; 2025 Peixi Xie. All rights reserved.</p>
+        </footer>
 
-        <div class="resume-section">
-            <h3>Skills</h3>
-            <ul>
-                <li><strong>Languages:</strong> Fluent in English, Mandarin, Cantonese, and Spanish</li>
-                <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript, HTML/CSS</li>
-                <li><strong>Tools and Technologies:</strong> Microsoft Office, Git/GitHub, JSON, NLP libraries (NLTK, spaCy)</li>
-                <li><strong>Machine Learning:</strong> Proficient in basic machine learning techniques using Python</li>
-                <li><strong>Data Analysis:</strong> Capable of performing basic data analysis using Python (pandas, numpy)</li>
-            </ul>
-        </div>
-
-    </main>
-
-    <footer class="text-center p-3 mt-5">
-        <p>&copy; 2025 Max Xie. All rights reserved.</p>
-    </footer>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
-</html>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+    </html>

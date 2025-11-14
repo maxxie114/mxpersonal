@@ -1,0 +1,66 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const content = document.getElementById('content');
+    const routes = {
+        '#home': 'home.html',
+        '#about': 'about.html',
+        '#projects': 'projects.html',
+        '#publications': 'publications.html',
+        '#resume': 'resume.html',
+        '#contact': 'contact.html'
+    };
+
+    // Preserve initial content (index.html) for the home view so we don't overwrite
+    // the richer, designed Skills section that lives in index.html.
+    const initialContent = content ? content.innerHTML : '';
+
+    function loadContent() {
+        const hash = window.location.hash || '#home';
+
+        // If the home/hash is requested, restore initial content instead of
+        // fetching the separate `home.html` file which contains a simpler layout.
+        if (hash === '#home' || hash === '') {
+            if (content) content.innerHTML = initialContent;
+            return;
+        }
+
+        const url = routes[hash];
+
+        // If there's a mapped route, fetch it.
+        if (url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    if (content) content.innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                    if (content) content.innerHTML = '<p>Error loading content. Please try again later.</p>';
+                });
+        } else {
+            // Not a mapped route. It may be an anchor/hash pointing to a section
+            // inside the initial index content (e.g., #skills). Restore the
+            // initial content and try to scroll to that element. If the element
+            // doesn't exist, show a not-found message.
+            if (content) {
+                content.innerHTML = initialContent;
+                const anchor = hash.startsWith('#') ? hash.slice(1) : null;
+                if (anchor) {
+                    // Wait for DOM insertion then attempt to find the element.
+                    setTimeout(() => {
+                        const el = document.getElementById(anchor);
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                            content.innerHTML = '<p>Page not found.</p>';
+                        }
+                    }, 10);
+                } else {
+                    content.innerHTML = '<p>Page not found.</p>';
+                }
+            }
+        }
+    }
+
+    window.addEventListener('hashchange', loadContent);
+    loadContent(); // Load initial content
+});

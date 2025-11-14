@@ -1,49 +1,89 @@
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title text-center">Projects</h2>
-                <p class="text-center">Here are some of the projects I've worked on. To add a new project, simply copy and paste one of the `col-md-4` divs and update the content.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Max Xie</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Small tweaks for consistent project card images */
+        .project-card-img { height:180px; object-fit:cover; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Peixi "Max" Xie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
+    </nav>
 
-<div class="row mt-4">
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">QubeMC</h5>
-                <p class="card-text">A Minecraft Gaming and Hosting company that I own and operate. We offer various game modes and server hosting for both Bedrock and Java editions.</p>
-                <a href="https://www.qubemc.com/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Projects</h2>
+                        <p class="text-center">Here are some of the projects I've worked on. To add a new project, copy one of the cards below and update its content.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">2B2TMCPE</h5>
-                <p class="card-text">A Minecraft Bedrock Edition anarchy server based on 2b2t.org. It's a chaotic environment where anything goes.</p>
-                <a href="https://2b2tmcpe.org/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/lobby_logo.png" class="card-img-top project-card-img" alt="QubeMC">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">QubeMC</h5>
+                        <p class="card-text">A Minecraft Gaming and Hosting company that I own and operate. We offer various game modes and server hosting for both Bedrock and Java editions.</p>
+                        <a href="https://www.qubemc.com/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/icon-1to1.jpg" class="card-img-top project-card-img" alt="2B2TMCPE">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">2B2TMCPE</h5>
+                        <p class="card-text">A Minecraft Bedrock Edition anarchy server based on 2b2t.org. It's a chaotic environment where anything goes.</p>
+                        <a href="https://2b2tmcpe.org/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="assets/img/self_intro.jpg" class="card-img-top project-card-img" alt="Personal Website">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Personal Website</h5>
+                        <p class="card-text">This website itself is a project! It's built with Bootstrap and JavaScript, and it's designed to be a professional portfolio for my work.</p>
+                        <a href="self_introduction_max_en.html" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Personal Website</h5>
-                <p class="card-text">This website itself is a project! It's built with Bootstrap and JavaScript, and it's designed to be a professional portfolio for my work.</p>
-                <a href="#" class="btn btn-primary mt-auto">View Project</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 mt-4">
-        <div class="card h-100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">NLP Pipeline</h5>
-                <p class="card-text">A Python-based NLP pipeline for text processing and analysis. It includes modules for tokenization, stemming, lemmatization, and sentiment analysis.</p>
-                <a href="https://github.com/maxxie114/nlp-pipeline" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-            </div>
-        </div>
-    </div>
-</div>
+    </main>
+
+    <footer class="text-center p-3 mt-5">
+        <p>&copy; 2025 Peixi Xie. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -18,22 +18,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="index.html#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="index.html#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,87 @@
     </nav>
 
     <main id="content" class="container mt-5 pt-5">
-        
+        <!-- Home / Hero -->
+        <section id="home" class="jumbotron text-center">
+            <h1 class="display-4">Peixi "Max" Xie</h1>
+            <p class="lead">Software Developer | Computational Linguist</p>
+            <hr class="my-4">
+            <p>Welcome to my personal portfolio. Here you can find information about my projects, publications, and professional background.</p>
+        </section>
+
+        <!-- About (full) — canonical About content moved into index.html -->
+        <section id="about" class="mb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-center">About Me</h2>
+                            <div class="row align-items-center">
+                                <div class="col-md-4 text-center">
+                                    <img src="assets/img/max_selfie.jpg" class="img-fluid rounded-circle" alt="Max Xie" style="width: 240px;">
+                                </div>
+                                <div class="col-md-8">
+                                    <p class="lead">
+                                        I'm a linguist and software developer. I completed my B.A. in Linguistics at UC Santa Cruz and am now pursuing an M.A. in Linguistics at San Francisco State University with a focus on Computational Linguistics. I enjoy combining linguistic theory with engineering to build human-centered language technology.
+                                    </p>
+                                    <p>
+                                        My background spans linguistics research, programming, and startup management. I work primarily in Python and modern NLP toolkits (spaCy, NLTK), experiment with LLMs, and use data-driven methods to analyze language. I'm actively seeking opportunities in NLP and AI that pair linguistic insight with technical innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Skills</h3>
+                            <div class="row mt-3">
+                                <div class="col-md-7">
+                                    <ul class="list-unstyled">
+                                        <li><strong>Languages:</strong> Fluent in English, Mandarin, Cantonese; Spanish (conversational)</li>
+                                        <li><strong>Programming Languages:</strong> Python, Java, C, JavaScript, HTML/CSS</li>
+                                        <li><strong>AI & Tools:</strong> TensorFlow, PyTorch, Hugging Face, vLLM, Ray, spaCy, NLTK, scikit-learn</li>
+                                        <li><strong>LLMs & Techniques:</strong> Prompt engineering, fine-tuning, Retrieval-Augmented Generation (RAG), agent orchestration</li>
+                                        <li><strong>Data & ML:</strong> pandas, numpy; experiment-driven ML workflows and model evaluation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5">
+                                    <h6>Quick badges</h6>
+                                    <p>
+                                        <span class="badge bg-info me-1">Python</span>
+                                        <span class="badge bg-info me-1">Java</span>
+                                        <span class="badge bg-info me-1">C</span>
+                                        <span class="badge bg-info me-1">JavaScript</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-success me-1">TensorFlow</span>
+                                        <span class="badge bg-success me-1">PyTorch</span>
+                                        <span class="badge bg-warning text-dark me-1">vLLM</span>
+                                        <span class="badge bg-warning text-dark me-1">Ray</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-secondary me-1">spaCy</span>
+                                        <span class="badge bg-secondary me-1">NLTK</span>
+                                        <span class="badge bg-secondary me-1">HuggingFace</span>
+                                        <span class="badge bg-secondary me-1">scikit-learn</span>
+                                    </p>
+                                    <p>
+                                        <span class="badge bg-info me-1">LLMs</span>
+                                        <span class="badge bg-info me-1">Prompt Eng.</span>
+                                        <span class="badge bg-dark me-1">AI Agents</span>
+                                        <span class="badge bg-dark me-1">RAG</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="text-center p-3 mt-5">
@@ -49,6 +129,5 @@
     </footer>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/app.js"></script>
 </body>
 </html>
