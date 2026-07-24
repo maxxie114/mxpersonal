@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        /* Visual shell styles to mirror printable resume */
+        /* Artistic resume styles */
         body { background: linear-gradient(180deg,#f7f9fc 0%, #ffffff 40%); }
         .resume-shell { max-width: 1100px; margin: 3rem auto; box-shadow: 0 8px 30px rgba(35,40,50,0.08); border-radius: 12px; overflow: hidden; }
         .resume-left { background: #0b1220; color: #fff; padding: 2.5rem; }
@@ -18,22 +18,23 @@
         .contact a { color:#cfe6ff; text-decoration:none; }
         .section-title { color:#0b1220; border-left:4px solid #0b66ff; padding-left:0.75rem; margin-bottom:1rem; }
         .timeline { position:relative; padding-left:1.25rem; }
-        .timeline:before { content:""; position:absolute; left:0.25rem; top:0; bottom:0; width:3px; background:linear-gradient(#0b66ff,#7db8ff); border-radius:2px; }
+        .timeline:before { content:''; position:absolute; left:0.25rem; top:0; bottom:0; width:3px; background:linear-gradient(#0b66ff,#7db8ff); border-radius:2px; }
         .timeline-item { position:relative; margin-bottom:1.5rem; padding-left:1rem; }
-        .timeline-item:before { content:""; position:absolute; left:-0.3rem; top:6px; width:12px; height:12px; border-radius:50%; background:#fff; border:3px solid #0b66ff; }
+        .timeline-item:before { content:''; position:absolute; left:-0.3rem; top:6px; width:12px; height:12px; border-radius:50%; background:#fff; border:3px solid #0b66ff; }
         .job-title { font-weight:700; color:#14223b; }
         .job-meta { color:#6c7a89; font-size:0.9rem; }
+        .award-meta { color:#0b66ff; font-weight:600; font-size:0.85rem; }
         .skill-badge { display:inline-block; margin:0.15rem 0.25rem; background:#eef6ff; color:#073566; padding:0.35rem 0.6rem; border-radius:999px; font-weight:600; font-size:0.85rem; }
         .left-list { list-style:none; padding:0; margin-top:1rem; }
         .left-list li { margin:0.6rem 0; color:#dbeeff; }
-        @media (max-width: 768px){ .resume-shell{ margin:1rem; } .resume-left{ text-align:center; } .timeline:before{ left:0.5rem; } }
+        @media (max-width: 768px){ .resume-shell{ margin:1rem; } .resume-left{ text-align:center } .timeline:before{ left:0.5rem } }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Peixi "Max" Xie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -54,37 +55,43 @@
             <div class="text-center">
                 <img src="assets/img/max_selfie.jpg" alt="Max selfie" class="avatar">
                 <div class="name">Peixi "Max" Xie</div>
-                <div class="title">Software Engineer &amp; SFSU Graduate Student</div>
+                <div class="title">Computational Linguist</div>
                 <div class="contact mt-3">
                     <div><i class="fas fa-envelope me-2"></i><a href="mailto:maxxie114@gmail.com">maxxie114@gmail.com</a></div>
-                    <div><i class="fas fa-phone me-2"></i>+1 (415) 941-9368</div>
-                    <div><i class="fas fa-map-marker-alt me-2"></i>San Francisco, CA 94122</div>
-                    <div><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/peixi-xie/" target="_blank" rel="noopener">LinkedIn</a></div>
+                    <div><i class="fas fa-phone me-2"></i>(415) 941-9368</div>
+                    <div><i class="fas fa-location-dot me-2"></i>San Francisco, CA</div>
+                    <div><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/peixi-xie/" target="_blank" rel="noopener">linkedin.com/in/peixi-xie</a></div>
+                    <div><i class="fab fa-github me-2"></i><a href="https://github.com/maxxie114" target="_blank" rel="noopener">github.com/maxxie114</a></div>
                     <div><i class="fas fa-globe me-2"></i><a href="https://www.mxpersonal.com/" target="_blank" rel="noopener">mxpersonal.com</a></div>
-                    <div class="mt-3"><a href="Peixi Xie - Resume (SWE).pdf" class="btn btn-sm btn-outline-light" style="font-weight:600;" target="_blank" rel="noopener"><i class="fas fa-download me-1"></i>Download Resume</a></div>
+                    <div class="mt-2"><a href="Peixi Xie - Resume (AI Linguist).pdf" class="btn btn-sm btn-outline-light" style="font-weight:600;" target="_blank"><i class="fas fa-download me-1"></i>Download Resume</a></div>
                 </div>
             </div>
 
             <hr style="border-color: rgba(255,255,255,0.06)">
 
-            <h6 class="text-uppercase" style="color:#9fb3d6">Quick Skills</h6>
+            <h6 class="text-uppercase" style="color:#9fb3d6">Skills</h6>
             <div>
                 <span class="skill-badge">Python</span>
-                <span class="skill-badge">Java</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">Flask</span>
+                <span class="skill-badge">spaCy</span>
+                <span class="skill-badge">NLTK</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">scikit-learn</span>
+                <span class="skill-badge">TensorFlow</span>
                 <span class="skill-badge">LangChain</span>
+                <span class="skill-badge">Google ADK</span>
+                <span class="skill-badge">pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Java</span>
             </div>
 
             <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Tools</h6>
             <ul class="left-list">
-                <li><i class="fas fa-server me-2"></i>Linux &amp; Docker Ops</li>
-                <li><i class="fas fa-code-branch me-2"></i>Git / GitHub</li>
-                <li><i class="fas fa-robot me-2"></i>OpenAI Agent Builder</li>
-                <li><i class="fas fa-cubes me-2"></i>LangChain &amp; Google ADK</li>
-                <li><i class="fas fa-microchip me-2"></i>PyTorch / TensorFlow</li>
-                <li><i class="fas fa-chart-line me-2"></i>pandas / NumPy</li>
+                <li><i class="fas fa-code me-2"></i>Git / GitHub</li>
+                <li><i class="fab fa-docker me-2"></i>Docker</li>
+                <li><i class="fas fa-terminal me-2"></i>Linux</li>
+                <li><i class="fas fa-flask me-2"></i>Flask</li>
             </ul>
 
             <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Languages</h6>
@@ -100,30 +107,38 @@
             <div class="container-fluid">
                 <div class="mb-4">
                     <h2 class="section-title">Profile</h2>
-                    <p>Software engineer and SFSU graduate student with strong Python and Java backend experience and hands-on Linux and Docker operations. Built full-stack services and SQL-backed APIs alongside agentic LLM systems (LangChain and ADK), including crypto risk analysis workflows. Focused on shipping reliable, maintainable products from prototype to production.</p>
+                    <p>Computational linguist with experience in LLM evaluation, AI-assisted text simplification, multilingual NLP, and linguistic data analysis.</p>
                 </div>
 
                 <div class="mb-4">
-                    <h2 class="section-title">Employment</h2>
+                    <h2 class="section-title">Research &amp; Academic Experience</h2>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="job-title">Founder &amp; Lead Developer <span class="job-meta">• Jun 2020 – Present</span></div>
-                            <div class="job-meta">QubeMC LLC — San Francisco, CA</div>
+                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2024 – Present</span></div>
+                            <div class="job-meta">ECOLE Lab, San Francisco State University — AI-Assisted Text Simplification Research Project</div>
                             <ul>
-                                <li>Built and operated a production hosting and software services business, owning delivery across development, infrastructure, and support while generating recurring revenue.</li>
-                                <li>Developed customer-facing services and internal tooling that connected backend APIs with Linux-based deployment environments.</li>
-                                <li>Provisioned and administered dedicated Linux servers, automated deployment and maintenance, and implemented security hardening controls.</li>
-                                <li>Diagnosed production incidents and shipped fixes to improve reliability and customer experience.</li>
+                                <li>Investigate how large language models simplify complex texts and how AI-generated simplifications differ from human language processing in meaning, linguistic structure, and readability.</li>
+                                <li>Build Python-based NLP, evaluation, and data-analysis workflows to process source texts, examine model-generated simplifications, and identify recurring linguistic patterns.</li>
+                                <li>Apply corpus-based, experimental, and computational methods to evaluate simplification quality and support research documentation and project development.</li>
                             </ul>
                         </div>
+
                         <div class="timeline-item">
-                            <div class="job-title">Website Manager (Part-time) <span class="job-meta">• Aug 2024 – Present</span></div>
-                            <div class="job-meta">Episcopal Church of the Incarnation — San Francisco, CA</div>
+                            <div class="job-title">Instructional Support Assistant <span class="job-meta">• Sep 2025 – Dec 2025</span></div>
+                            <div class="job-meta">San Francisco State University</div>
                             <ul>
-                                <li>Maintain multiple WordPress sites, shipping content updates, UI fixes, and quality improvements with HTML and CSS changes.</li>
-                                <li>Implement accessibility and usability enhancements to improve structure, navigation, and readability for a broad community.</li>
-                                <li>Built an LLM-driven translation pipeline using OpenAI Agent Builder and workflow automation to streamline weekly bilingual publishing.</li>
-                                <li>Prototyped a LangChain-based email management workflow that automates outbound messaging and subscription handling.</li>
+                                <li>Supported introductory linguistics courses through classroom assistance, office hours, student Q&amp;A, and assignment feedback.</li>
+                                <li>Evaluated assignments and exams using standardized rubrics and developed lightweight computational demonstrations to explain linguistic concepts.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2022 – Jun 2023</span></div>
+                            <div class="job-meta">University of California, Santa Cruz</div>
+                            <ul>
+                                <li>Built Python workflows for ultrasound-based speech research, automating experimental trials and synchronizing multimodal speech data.</li>
+                                <li>Used DeepLabCut and Articulate Assistant Advanced for CNN-based tongue-contour tracking from ultrasound video.</li>
+                                <li>Applied Whisper and LLM-assisted post-processing to streamline transcription, correction, and data labeling; presented the project at the UCSC Linguistics Undergraduate Research Conference.</li>
                             </ul>
                         </div>
                     </div>
@@ -133,38 +148,49 @@
                     <h2 class="section-title">Projects</h2>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="job-title">Crypto Risk Analysis Agent <span class="job-meta">• Production Agents Hackathon — Best Use of TRM Labs (1st Place)</span></div>
+                            <div class="job-title">Dynamic Benchmarking of Large Language Models <span class="job-meta">• M.A. Capstone</span></div>
                             <ul>
-                                <li>Built a full-stack agent system integrating TRM APIs and external data sources to surface token risk signals and produce investment risk summaries.</li>
-                                <li>Deployed MCP services with Docker to stabilize API integrations and unblock collaboration under hackathon deadlines.</li>
+                                <li>Analyzed static, dynamic, and metalinguistic LLM evaluation methods, focusing on benchmark contamination, reasoning quality, and genuine language understanding.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="job-title">Crypto Risk Analysis Agent <span class="job-meta">• Production Agents Hackathon</span></div>
+                            <div class="award-meta">Best Use of TRM Labs, 1st Place</div>
+                            <div class="job-meta">GitHub: <a href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent" target="_blank" rel="noopener">github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent</a></div>
+                            <ul>
+                                <li>Built a tool-calling LLM agent that integrated structured API data and external sources to process noisy inputs, evaluate cryptocurrency risk signals, and generate interpretable user-facing summaries.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="job-title">Additional AI Hackathon Awards</div>
+                            <ul>
+                                <li><span class="award-meta">2nd Place</span> — REAL Agent Challenge, AGI Inc. x OpenAI x Lovable Hackathon.</li>
+                                <li><span class="award-meta">1st Place</span> — Frontegg Sponsor Prize, Self-Evolving Agents Hackathon.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="mb-4">
-                    <h2 class="section-title">Academic Experience</h2>
+                    <h2 class="section-title">Employment</h2>
                     <div class="timeline">
                         <div class="timeline-item">
-                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2024 – Present</span></div>
-                            <div class="job-meta">ECOLE Lab, San Francisco State University — San Francisco, CA</div>
+                            <div class="job-title">Full Stack Developer &amp; Linux Server Administrator <span class="job-meta">• Jun 2020 – Present</span></div>
+                            <div class="job-meta">QubeMC LLC — San Francisco, CA</div>
                             <ul>
-                                <li>Build NLP and LLM evaluation workflows along with data analysis pipelines that support AI-assisted text simplification research.</li>
+                                <li>Develop and maintain customer-facing web applications, backend APIs, internal tools, and automation workflows for live hosting and software services.</li>
+                                <li>Administer Linux infrastructure, troubleshoot production issues, and improve system reliability while reducing repetitive operational work.</li>
                             </ul>
                         </div>
+
                         <div class="timeline-item">
-                            <div class="job-title">Instructional Support Assistant <span class="job-meta">• Sep 2025 – Dec 2025</span></div>
-                            <div class="job-meta">San Francisco State University — San Francisco, CA</div>
+                            <div class="job-title">Website Maintainer / Bilingual Content Workflow Support (Part-time) <span class="job-meta">• Aug 2024 – Present</span></div>
+                            <div class="job-meta">Episcopal Church of the Incarnation — San Francisco, CA</div>
                             <ul>
-                                <li>Created lightweight computational demonstrations and tools while providing ongoing instructional support.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2022 – Jun 2023</span></div>
-                            <div class="job-meta">University of California, Santa Cruz — Santa Cruz, CA</div>
-                            <ul>
-                                <li>Built a reproducible computer vision pipeline for ultrasound speech research, automating workflow execution and multimodal data synchronization.</li>
-                                <li>Integrated DeepLabCut and AAA for CNN-based tongue-contour tracking, leveraging Whisper and LLM-assisted post-processing to streamline labeling ahead of LURC presentations.</li>
+                                <li>Maintain multiple WordPress websites through content publishing, bug fixes, UI updates, accessibility improvements, and bilingual English-Chinese content support.</li>
+                                <li>Build LLM-assisted translation and communication workflows using OpenAI Agent Builder, LangChain, and automation tools to support weekly publishing and outbound messaging.</li>
                             </ul>
                         </div>
                     </div>
@@ -172,34 +198,10 @@
 
                 <div class="mb-4">
                     <h2 class="section-title">Education</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="job-title">M.A. Linguistics (Computational Linguistics) <span class="job-meta">• Expected Sep 2026</span></div>
-                            <div class="job-meta">San Francisco State University — San Francisco, CA</div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="job-title">B.A. Linguistics <span class="job-meta">• Jun 2024</span></div>
-                            <div class="job-meta">University of California, Santa Cruz — Santa Cruz, CA</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Awards</h2>
-                    <ul>
-                        <li>Best Use of TRM Labs — 1st Place, Production Agents Hackathon (Nov 2025) for Crypto Risk Analysis Agent.</li>
-                        <li>REAL Agent Challenge (Agent Track) — 2nd Place, AGI Inc. x OpenAI x Lovable Hackathon (Dec 2025) for Browser Agent.</li>
-                        <li>Frontegg Sponsor Prize — Best Use of FrontMCP, Self-Evolving Agents Hackathon (Nov 2025) for YouTube Agent.</li>
-                    </ul>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Skills &amp; Tools</h2>
-                    <p><strong>Programming:</strong> Python, Java, JavaScript, C; SQL (PostgreSQL, MySQL, SQLite); Flask.</p>
-                    <p><strong>Platforms &amp; Ops:</strong> Linux administration, Docker orchestration, CI automation.</p>
-                    <p><strong>Machine Learning:</strong> PyTorch, scikit-learn, TensorFlow/Keras, pandas, NumPy.</p>
-                    <p><strong>NLP &amp; Agents:</strong> LangChain, Google ADK, spaCy, NLTK, OpenAI Agent Builder.</p>
-                    <p><strong>Communication:</strong> English, Mandarin, Cantonese, Spanish (intermediate).</p>
+                    <div class="job-title">M.A. Linguistics, Computational Linguistics Concentration <span class="job-meta">• Jun 2026 | GPA: 3.6</span></div>
+                    <div class="job-meta">San Francisco State University</div>
+                    <div class="job-title mt-3">B.A. Linguistics <span class="job-meta">• Jun 2024</span></div>
+                    <div class="job-meta">University of California, Santa Cruz</div>
                 </div>
             </div>
         </section>
