@@ -10,6 +10,9 @@
     <style>
         /* Small tweaks for consistent project card images */
         .project-card-img { height:180px; object-fit:cover; }
+        .project-icon { height:180px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem; }
+        .award-badge { display:inline-block; background:#0b66ff; color:#fff; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:999px; margin-bottom:0.5rem; }
+        .tag { display:inline-block; background:#eef6ff; color:#073566; font-size:0.75rem; font-weight:600; padding:0.2rem 0.5rem; border-radius:999px; margin:0.1rem; }
     </style>
 </head>
 <body>
@@ -33,12 +36,100 @@
     </nav>
 
     <main class="container mt-5 pt-5">
+        <!-- AI & Agent Projects -->
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title text-center">Projects</h2>
-                        <p class="text-center">Here are some of the projects I've worked on. To add a new project, copy one of the cards below and update its content.</p>
+                        <h2 class="card-title text-center">AI &amp; Agent Projects</h2>
+                        <p class="text-center">Production and hackathon AI systems &mdash; tool-calling LLM agents, custom MCP servers, and LLM evaluation frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Crypto Risk Analysis Agent -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#0b66ff,#7db8ff);"><i class="fas fa-robot"></i></div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="award-badge">1st Place &mdash; Best Use of TRM Labs</span>
+                        <h5 class="card-title">Crypto Risk Analysis Agent</h5>
+                        <p class="text-muted small mb-2">Production Agents Hackathon</p>
+                        <p class="card-text">A full-stack AI agent that evaluates token and wallet risk by combining blockchain data from Helius, Moralis, DexScreener, and TRM Labs via the Anthropic API.</p>
+                        <ul class="small text-muted ps-3 mb-3">
+                            <li>Structured prompts and tool-calling workflows convert noisy API inputs into grounded risk scores and interpretable recommendations.</li>
+                            <li>A custom MCP server exposes four blockchain-analysis tools over HTTP, SSE, and stdio transports.</li>
+                            <li>Integrated with a Node.js/Express backend and deployed with Docker, retries, rate-limit handling, and health checks.</li>
+                        </ul>
+                        <div class="mb-3">
+                            <span class="tag">Anthropic API</span>
+                            <span class="tag">MCP Server</span>
+                            <span class="tag">Node.js/Express</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Tool Calling</span>
+                        </div>
+                        <a href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent" class="btn btn-primary mt-auto" target="_blank" rel="noopener"><i class="fab fa-github me-1"></i>View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LLM Benchmarking Capstone -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#14223b,#34506f);"><i class="fas fa-chart-line"></i></div>
+                    <div class="card-body d-flex flex-column">
+                        <span class="award-badge" style="background:#6c7a89;">M.A. Capstone</span>
+                        <h5 class="card-title">Dynamic Benchmarking of LLMs</h5>
+                        <p class="text-muted small mb-2">SFSU &mdash; Computational Linguistics</p>
+                        <p class="card-text">A comparative evaluation framework for static, dynamic, and metalinguistic LLM benchmarks, assessing whether benchmark scores reflect genuine language understanding.</p>
+                        <ul class="small text-muted ps-3 mb-3">
+                            <li>Focuses on benchmark contamination risk, reasoning quality, and benchmark reliability.</li>
+                            <li>Analyzes model performance and failure patterns across evaluation methods.</li>
+                        </ul>
+                        <div class="mb-3">
+                            <span class="tag">LLM Evaluation</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Benchmarks</span>
+                            <span class="tag">Research</span>
+                        </div>
+                        <a href="publications.html" class="btn btn-outline-primary mt-auto">Related Publications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More hackathon wins -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Additional Hackathon Awards</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                REAL Agent Challenge &mdash; <span class="text-muted">AGI Inc. &times; OpenAI &times; Lovable Hackathon</span>
+                                <span class="award-badge">2nd Place</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Frontegg Sponsor Prize &mdash; <span class="text-muted">Self-Evolving Agents Hackathon</span>
+                                <span class="award-badge">1st Place</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Software & Infrastructure -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Software &amp; Infrastructure</h2>
+                        <p class="text-center">Production services, hosting infrastructure, and web platforms I build and operate.</p>
                     </div>
                 </div>
             </div>
@@ -50,8 +141,8 @@
                     <img src="assets/img/lobby_logo.png" class="card-img-top project-card-img" alt="QubeMC">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">QubeMC</h5>
-                        <p class="card-text">A Minecraft Gaming and Hosting company that I own and operate. We offer various game modes and server hosting for both Bedrock and Java editions.</p>
-                        <a href="https://www.qubemc.com/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        <p class="card-text">A Minecraft Gaming and Hosting company I founded and operate. We offer various game modes and server hosting for both Bedrock and Java editions, with full-stack web apps, backend APIs, and automation behind the scenes.</p>
+                        <a href="https://www.qubemc.com/" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
                     </div>
                 </div>
             </div>
@@ -61,19 +152,49 @@
                     <img src="assets/img/icon-1to1.jpg" class="card-img-top project-card-img" alt="2B2TMCPE">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">2B2TMCPE</h5>
-                        <p class="card-text">A Minecraft Bedrock Edition anarchy server based on 2b2t.org. It's a chaotic environment where anything goes.</p>
-                        <a href="https://2b2tmcpe.org/" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        <p class="card-text">A Minecraft Bedrock Edition anarchy server based on 2b2t.org. It's a chaotic environment where anything goes &mdash; backed by Linux infrastructure I administer.</p>
+                        <a href="https://2b2tmcpe.org/" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="assets/img/self_intro.jpg" class="card-img-top project-card-img" alt="Personal Website">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#adb5bd,#6c757d);"><i class="fas fa-code"></i></div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Personal Website</h5>
-                        <p class="card-text">This website itself is a project! It's built with Bootstrap and JavaScript, and it's designed to be a professional portfolio for my work.</p>
-                        <a href="self_introduction_max_en.html" class="btn btn-primary mt-auto" target="_blank">View Project</a>
+                        <p class="card-text">This website is itself a project &mdash; a professional portfolio built with Bootstrap, and continuously refined as my work evolves.</p>
+                        <a href="index.html" class="btn btn-primary mt-auto">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Research -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Research</h2>
+                        <p class="text-center">Linguistics and computational research presented at academic venues.</p>
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <div class="border rounded p-3 h-100">
+                                    <h5 class="mb-1">AI-Assisted Text Simplification</h5>
+                                    <p class="text-muted small mb-2">ECOLE Lab, San Francisco State University &mdash; Sep 2024 to Present</p>
+                                    <p class="mb-0">Investigating how large language models simplify complex texts and how AI-generated simplifications differ from human language processing in meaning, linguistic structure, and readability. Building Python-based NLP, evaluation, and data-analysis workflows.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="border rounded p-3 h-100">
+                                    <h5 class="mb-1">Ultrasound-Based Speech Research</h5>
+                                    <p class="text-muted small mb-2">University of California, Santa Cruz &mdash; Sep 2022 to Jun 2023</p>
+                                    <p class="mb-0">Built Python workflows automating experimental trials and synchronizing multimodal speech data. Integrated DeepLabCut and Articulate Assistant Advanced for CNN-based tongue-contour tracking, with Whisper and LLM-assisted post-processing for transcription and labeling. Presented at UCSC LURC.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
