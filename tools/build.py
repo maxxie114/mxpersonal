@@ -116,6 +116,8 @@ def card(p, heading="h3"):
     artifact = ""
     if p.page == CAP:
         artifact = link("Paper PDF", PAPER, "quiet", "external")
+    elif p.website:
+        artifact = link("Website", p.website, "quiet", "external")
     elif p.repo:
         artifact = link("GitHub", p.repo, "quiet", "external")
     elif p.extra:
@@ -202,7 +204,8 @@ def projects():
             sections.append(f'<section class="subproject"><h2>{escape(title)}</h2><p>{escape(description)}</p><div class="actions">{links}</div></section>')
         sections.extend(f'<section><h2>{title}</h2><p>{text}</p></section>' for title,text in p.sections)
         sections.insert(1, project_figures(p))
-        buttons = link("Source repository",p.repo,"button secondary","external") if p.repo else ""
+        buttons = link("Visit website",p.website,"button primary","external") if p.website else ""
+        buttons += link("Source repository",p.repo,"button secondary","external") if p.repo else ""
         buttons += ''.join(link(label,url,"text-link","external") for label,url in p.extra)
         actions = f'<div class="actions">{buttons}</div>' if buttons else ""
         next_p = PROJECTS[(i+1)%len(PROJECTS)]
