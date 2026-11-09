@@ -8,3 +8,23 @@ __pycache__/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Allowlisted static build
+dist/
+
+# Local coding assistants and their instructions
+.claude/
+.codex/
+.agents/
+.agent/
+.cursor/
+.github/agents/
+.github/copilot-instructions.md
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+SKILL.md
+
+# Local planning and review notes
+/planner.md
+/implementation-notes.md

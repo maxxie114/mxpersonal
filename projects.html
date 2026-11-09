@@ -1,211 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Max Xie</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        /* Small tweaks for consistent project card images */
-        .project-card-img { height:180px; object-fit:cover; }
-        .project-icon { height:180px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:3rem; }
-        .award-badge { display:inline-block; background:#0b66ff; color:#fff; font-size:0.75rem; font-weight:700; padding:0.2rem 0.6rem; border-radius:999px; margin-bottom:0.5rem; }
-        .tag { display:inline-block; background:#eef6ff; color:#073566; font-size:0.75rem; font-weight:600; padding:0.2rem 0.5rem; border-radius:999px; margin:0.1rem; }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Peixi "Max" Xie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container mt-5 pt-5">
-        <!-- AI & Agent Projects -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">AI &amp; Agent Projects</h2>
-                        <p class="text-center">Production and hackathon AI systems &mdash; tool-calling LLM agents, custom MCP servers, and LLM evaluation frameworks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <!-- Crypto Risk Analysis Agent -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="project-icon" style="background:linear-gradient(135deg,#0b66ff,#7db8ff);"><i class="fas fa-robot"></i></div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="award-badge">1st Place &mdash; Best Use of TRM Labs</span>
-                        <h5 class="card-title">Crypto Risk Analysis Agent</h5>
-                        <p class="text-muted small mb-2">Production Agents Hackathon</p>
-                        <p class="card-text">A full-stack AI agent that evaluates token and wallet risk by combining blockchain data from Helius, Moralis, DexScreener, and TRM Labs via the Anthropic API.</p>
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Structured prompts and tool-calling workflows convert noisy API inputs into grounded risk scores and interpretable recommendations.</li>
-                            <li>A custom MCP server exposes four blockchain-analysis tools over HTTP, SSE, and stdio transports.</li>
-                            <li>Integrated with a Node.js/Express backend and deployed with Docker, retries, rate-limit handling, and health checks.</li>
-                        </ul>
-                        <div class="mb-3">
-                            <span class="tag">Anthropic API</span>
-                            <span class="tag">MCP Server</span>
-                            <span class="tag">Node.js/Express</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Tool Calling</span>
-                        </div>
-                        <a href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent" class="btn btn-primary mt-auto" target="_blank" rel="noopener"><i class="fab fa-github me-1"></i>View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LLM Benchmarking Capstone -->
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="project-icon" style="background:linear-gradient(135deg,#14223b,#34506f);"><i class="fas fa-chart-line"></i></div>
-                    <div class="card-body d-flex flex-column">
-                        <span class="award-badge" style="background:#6c7a89;">M.A. Capstone</span>
-                        <h5 class="card-title">Dynamic Benchmarking of LLMs</h5>
-                        <p class="text-muted small mb-2">SFSU &mdash; Computational Linguistics</p>
-                        <p class="card-text">A comparative evaluation framework for static, dynamic, and metalinguistic LLM benchmarks, assessing whether benchmark scores reflect genuine language understanding.</p>
-                        <ul class="small text-muted ps-3 mb-3">
-                            <li>Focuses on benchmark contamination risk, reasoning quality, and benchmark reliability.</li>
-                            <li>Analyzes model performance and failure patterns across evaluation methods.</li>
-                        </ul>
-                        <div class="mb-3">
-                            <span class="tag">LLM Evaluation</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Benchmarks</span>
-                            <span class="tag">Research</span>
-                        </div>
-                        <a href="https://github.com/maxxie114/ENG895-Capstone/blob/master/Dynamic%20Benchmarking%20of%20LLMs.pdf" class="btn btn-primary mt-auto" target="_blank" rel="noopener"><i class="fab fa-github me-1"></i>View on GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- More hackathon wins -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Additional Hackathon Awards</h3>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                REAL Agent Challenge &mdash; <span class="text-muted">AGI Inc. &times; OpenAI &times; Lovable Hackathon</span>
-                                <span class="award-badge">2nd Place</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                Frontegg Sponsor Prize &mdash; <span class="text-muted">Self-Evolving Agents Hackathon</span>
-                                <span class="award-badge">1st Place</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="my-5">
-
-        <!-- Software & Infrastructure -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Software &amp; Infrastructure</h2>
-                        <p class="text-center">Production services, hosting infrastructure, and web platforms I build and operate.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="assets/img/lobby_logo.png" class="card-img-top project-card-img" alt="QubeMC">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">QubeMC</h5>
-                        <p class="card-text">A Minecraft Gaming and Hosting company I founded and operate. We offer various game modes and server hosting for both Bedrock and Java editions, with full-stack web apps, backend APIs, and automation behind the scenes.</p>
-                        <a href="https://www.qubemc.com/" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="assets/img/icon-1to1.jpg" class="card-img-top project-card-img" alt="2B2TMCPE">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">2B2TMCPE</h5>
-                        <p class="card-text">A Minecraft Bedrock Edition anarchy server based on 2b2t.org. It's a chaotic environment where anything goes &mdash; backed by Linux infrastructure I administer.</p>
-                        <a href="https://2b2tmcpe.org/" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="project-icon" style="background:linear-gradient(135deg,#adb5bd,#6c757d);"><i class="fas fa-code"></i></div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Personal Website</h5>
-                        <p class="card-text">This website is itself a project &mdash; a professional portfolio built with Bootstrap, and continuously refined as my work evolves.</p>
-                        <a href="index.html" class="btn btn-primary mt-auto">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="my-5">
-
-        <!-- Research -->
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Research</h2>
-                        <p class="text-center">Linguistics and computational research presented at academic venues.</p>
-                        <div class="row mt-4">
-                            <div class="col-md-6 mb-3">
-                                <div class="border rounded p-3 h-100">
-                                    <h5 class="mb-1">AI-Assisted Text Simplification</h5>
-                                    <p class="text-muted small mb-2">ECOLE Lab, San Francisco State University &mdash; Sep 2024 to Present</p>
-                                    <p class="mb-0">Investigating how large language models simplify complex texts and how AI-generated simplifications differ from human language processing in meaning, linguistic structure, and readability. Building Python-based NLP, evaluation, and data-analysis workflows.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="border rounded p-3 h-100">
-                                    <h5 class="mb-1">Production of English /r/ by Prosodic Position</h5>
-                                    <p class="text-muted small mb-2">University of California, Santa Cruz &mdash; Sep 2022 to Jun 2023 &middot; LURC 4, Jun 2023</p>
-                                    <p class="mb-2">Built Python workflows automating experimental trials and synchronizing multimodal speech data. Integrated DeepLabCut and Articulate Assistant Advanced for CNN-based tongue-contour tracking, with Whisper and LLM-assisted post-processing for transcription and labeling. Presented as a poster at UCSC's Linguistics Undergraduate Research Conference (LURC 4).</p>
-                                    <a href="https://drive.google.com/file/d/1uA4_SWrOTXbWqx0xCt_yErtYXEoBqbqr/view?usp=sharing" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener"><i class="fas fa-images me-1"></i>View Poster</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="text-center p-3 mt-5">
-        <p>&copy; 2025 Peixi Xie. All rights reserved.</p>
-    </footer>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Engineering projects · Max Xie</title><meta name="description" content="Explore FoxStar Agent for WeChat, browser agents, graph neural networks and speech research by Max Xie.">
+<link rel="canonical" href="https://www.mxpersonal.com/projects.html"><meta property="og:url" content="https://www.mxpersonal.com/projects.html"><meta property="og:type" content="website">
+<link rel="describedby" href="llms.txt" title="Portfolio guide for agents">
+<meta property="og:title" content="Engineering projects · Max Xie"><meta property="og:description" content="Explore FoxStar Agent for WeChat, browser agents, graph neural networks and speech research by Max Xie.">
+<meta property="og:image" content="https://www.mxpersonal.com/assets/portfolio/social.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/portfolio/icon.svg"><link rel="stylesheet" href="assets/css/portfolio-v2.css"><script defer src="assets/js/portfolio-v2.js"></script>
+</head><body><a class="skip" href="#content">Skip to content</a><header><div class="wrap mast"><a class="brand" href="index.html" aria-label="Max Xie, home"><span class="monogram" aria-hidden="true">mx</span>Max Xie<span class="slash" aria-hidden="true">/</span></a>
+<nav id="navigation" aria-label="Main navigation"><a class="navlink  " href="about.html">About</a><a class="navlink chosen " href="projects.html" aria-current="page">Projects</a><a class="navlink  " href="publications.html">Research</a><a class="navlink  " href="resume.html">Résumé</a><a class="navlink  contact-link" href="contact.html">Contact<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav><div class="nav-tools">
+<button id="theme" hidden aria-label="Light theme" aria-pressed="false" title="Light theme"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0"/></svg></button>
+<button id="menu" hidden aria-label="Navigation menu" aria-expanded="false" aria-controls="navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+</div></div></header><main id="content" class="wrap"><div class="page-head"><div class="eyebrow"><span></span>Projects</div><h1>Selected engineering work<em>.</em></h1><p class="intro">I build language tools and AI agents. During my M.A. in Linguistics at San Francisco State University, I focused on computational linguistics, studying how well language models reason about language and what happens to meaning when they simplify a text. I use Python, Java and SQL to build data pipelines, and Linux and Docker to run the systems that depend on them.</p><p class="intro">I’m a nine-time hackathon winner. I enjoy working with a team to turn an idea into a prototype we can test in a weekend. Recent projects include multi-agent workflows built with LangChain and Google ADK, and a crypto risk analysis tool that uses TRM APIs to help explain what’s happening on-chain.</p></div><div class="filterbar" role="group" aria-label="Filter projects" hidden><button data-filter="All" aria-pressed="true">All</button><button data-filter="Agents" aria-pressed="false">Agents</button><button data-filter="Browser Agents" aria-pressed="false">Browser Agents</button><button data-filter="Machine Learning" aria-pressed="false">Machine Learning</button><button data-filter="Deep Learning" aria-pressed="false">Deep Learning</button><button data-filter="LLM Evaluation" aria-pressed="false">LLM Evaluation</button><button data-filter="Security" aria-pressed="false">Security</button><button data-filter="Infrastructure" aria-pressed="false">Infrastructure</button><button data-filter="Experimental" aria-pressed="false">Experimental</button></div><span class="sr-only" id="filter-count" role="status"></span><section aria-label="Project case studies" class="cards listings"><article class="card" data-filters="Agents|Infrastructure"><div class="cover"><img src="assets/portfolio/covers/foxstar.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Agent infrastructure <i> / </i> Production · Private repository</div>
+<h2 class="card-title"><a href="project-foxstar.html">FoxStar Agent</a></h2><p>A production agent system for WeChat communities. FoxStar routes work across language models, delegates research to a background agent, and keeps a gaming guild’s rosters and attendance records in sync with its group chats.</p><ul class="tags"><li>Python</li><li>WeChatFerry</li><li>SQLite</li><li>FastAPI</li></ul>
+<div class="card-links"><a aria-label="Read the FoxStar Agent case study" class="case-link" href="project-foxstar.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></div></div></article><article class="card" data-filters="Browser Agents|Agents|LLM Evaluation"><div class="cover"><img src="assets/portfolio/covers/loopless.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Browser agents <i> / </i> Prototype</div>
+<h2 class="card-title"><a href="project-loopless.html">LoopLess</a></h2><p>A browser agent that remembers successful action sequences and tests whether it can reuse them on a later run.</p><ul class="tags"><li>Stagehand</li><li>Redis</li><li>W&B Weave</li></ul>
+<div class="card-links"><a aria-label="Read the LoopLess case study" class="case-link" href="project-loopless.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/loopless">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Machine Learning|Deep Learning"><div class="cover"><img src="assets/portfolio/covers/aml-gnn.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Graph neural networks <i> / </i> Course research</div>
+<h2 class="card-title"><a href="project-aml-gnn.html">Graph Learning for Anti-Money Laundering</a></h2><p>A comparison of transaction-graph models and tabular baselines for detecting rare laundering activity in IBM’s AML dataset.</p><ul class="tags"><li>PyTorch Geometric</li><li>GNN</li><li>XGBoost</li></ul>
+<div class="card-links"><a aria-label="Read the Graph Learning for Anti-Money Laundering case study" class="case-link" href="project-aml-gnn.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/csc871-anti-money-laundering-ibm-gnn">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Browser Agents|Agents|LLM Evaluation"><div class="cover"><img src="assets/portfolio/covers/real-browser-benchmark.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Browser-agent evaluation <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-real-browser-benchmark.html">REAL Browser Agent Benchmark</a></h2><p>A benchmark harness that runs agents against 16 calendar, email, hotel-booking and networking tasks.</p><ul class="tags"><li>Python</li><li>Browser automation</li><li>Evaluation</li></ul>
+<div class="card-links"><a aria-label="Read the REAL Browser Agent Benchmark case study" class="case-link" href="project-real-browser-benchmark.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/REAL-Hackathon-browser-agent-benchmark">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Machine Learning|Deep Learning"><div class="cover"><img src="assets/portfolio/covers/ultrasound-tongue-tracking.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Computer vision &amp; speech <i> / </i> Research</div>
+<h2 class="card-title"><a href="project-ultrasound-tongue-tracking.html">Tracking Tongue Shape in Ultrasound</a></h2><p>Computer vision and ultrasound workflows for measuring how the tongue shapes the English /r/ sound.</p><ul class="tags"><li>DeepLabCut</li><li>CNN</li><li>Python</li></ul>
+<div class="card-links"><a aria-label="Read the Tracking Tongue Shape in Ultrasound case study" class="case-link" href="project-ultrasound-tongue-tracking.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="assets/portfolio/english-r-prosodic-position.pdf">Conference poster (PDF)<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Machine Learning|Deep Learning|Experimental"><div class="cover"><img src="assets/portfolio/covers/ml-from-scratch.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Machine learning <i> / </i> Experiments</div>
+<h2 class="card-title"><a href="project-ml-from-scratch.html">Machine Learning from Scratch</a></h2><p>I worked out how a neural network learns on paper, then implemented it in Python. These five projects trace my experiments from individual weight updates to tool-calling agents and local inference.</p><ul class="tags"><li>C</li><li>Python</li><li>NLP</li></ul>
+<div class="card-links"><a aria-label="Read the Machine Learning from Scratch case study" class="case-link" href="project-ml-from-scratch.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/Basic_ML_Research">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Machine Learning|Deep Learning|Agents"><div class="cover"><img src="assets/portfolio/covers/swingsage.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Sequence modeling <i> / </i> Course project</div>
+<h2 class="card-title"><a href="project-swingsage.html">SwingSage</a></h2><p>A paper-trading experiment that combines an LSTM price forecast with a language model’s reading of market indicators.</p><ul class="tags"><li>LSTM</li><li>FastAPI</li><li>Paper trading</li></ul>
+<div class="card-links"><a aria-label="Read the SwingSage case study" class="case-link" href="project-swingsage.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/csc665-swingsage">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents|LLM Evaluation"><div class="cover"><img src="assets/portfolio/covers/litmus.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Voice &amp; evaluation <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-litmus.html">Litmus</a></h2><p>A test bench for voice agents that brings call evaluations and integration checks into one review.</p><ul class="tags"><li>Next.js</li><li>Fastify</li><li>Gemini Live</li></ul>
+<div class="card-links"><a aria-label="Read the Litmus case study" class="case-link" href="project-litmus.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/Litmus">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents"><div class="cover"><img src="assets/portfolio/covers/crypto-risk-agent.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Tool-using agents <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-crypto-risk-agent.html">Crypto Risk Analysis Agent</a></h2><p>An agent that connects wallet activity and token ownership data to explain concentration risk.</p><ul class="tags"><li>MCP</li><li>Solana</li><li>Claude</li></ul>
+<div class="card-links"><a aria-label="Read the Crypto Risk Analysis Agent case study" class="case-link" href="project-crypto-risk-agent.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="LLM Evaluation"><div class="cover"><img src="assets/portfolio/covers/dynamic-llm-benchmarking.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Language research <i> / </i> M.A. capstone</div>
+<h2 class="card-title"><a href="project-dynamic-llm-benchmarking.html">Dynamic Benchmarking of LLMs</a></h2><p>A study of how four language models change rank when the questions and scoring methods change.</p><ul class="tags"><li>MMLU</li><li>LiveBench</li><li>Linguistics</li></ul>
+<div class="card-links"><a aria-label="Read the Dynamic Benchmarking of LLMs case study" class="case-link" href="project-dynamic-llm-benchmarking.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="dynamic-benchmarking.pdf">Paper PDF<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents|Experimental"><div class="cover"><img src="assets/portfolio/covers/paigent-studio.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Agent orchestration <i> / </i> Prototype</div>
+<h2 class="card-title"><a href="project-paigent-studio.html">Paigent Studio</a></h2><p>A workflow editor that turns spoken or written requests into inspectable execution graphs.</p><ul class="tags"><li>MongoDB Atlas</li><li>x402</li><li>TypeScript</li></ul>
+<div class="card-links"><a aria-label="Read the Paigent Studio case study" class="case-link" href="project-paigent-studio.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/paigent">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Security|Agents"><div class="cover"><img src="assets/portfolio/covers/clawguard.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Agent security <i> / </i> Closed beta</div>
+<h2 class="card-title"><a href="project-clawguard.html">ClawGuard</a></h2><p>An email intake layer that gives agents structured messages and risk flags.</p><ul class="tags"><li>FastAPI</li><li>Gmail OAuth</li><li>SQLite</li></ul>
+<div class="card-links"><a aria-label="Read the ClawGuard case study" class="case-link" href="project-clawguard.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/ClawGuard">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Infrastructure|Experimental"><div class="cover"><img src="assets/portfolio/covers/replicalab.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Experimental systems <i> / </i> Prototype</div>
+<h2 class="card-title"><a href="project-replicalab.html">ReplicaLab</a></h2><p>A planning environment where agents negotiate a replication study within a budget and schedule.</p><ul class="tags"><li>OpenEnv</li><li>Docker</li><li>Python</li></ul>
+<div class="card-links"><a aria-label="Read the ReplicaLab case study" class="case-link" href="project-replicalab.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/replicalab-ai">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents"><div class="cover"><img src="assets/portfolio/covers/intel-marketplace.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Agent commerce <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-intel-marketplace.html">Intel Marketplace</a></h2><p>An agent that buys information from other agents and sells briefings assembled from news, market data and social signals.</p><ul class="tags"><li>Nevermined</li><li>Strands Agents</li><li>Apify</li></ul>
+<div class="card-links"><a aria-label="Read the Intel Marketplace case study" class="case-link" href="project-intel-marketplace.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/intel-marketplace">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents"><div class="cover"><img src="assets/portfolio/covers/companyintel-ai.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Company research <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-companyintel-ai.html">CompanyIntel AI</a></h2><p>A company research tool that brings competitor information, financial indicators and technical documentation into a single report.</p><ul class="tags"><li>FastAPI</li><li>Yutori</li><li>Neo4j</li></ul>
+<div class="card-links"><a aria-label="Read the CompanyIntel AI case study" class="case-link" href="project-companyintel-ai.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/companyintel-ai">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article><article class="card" data-filters="Agents"><div class="cover"><img src="assets/portfolio/covers/youtube-agent.webp" alt="" loading="lazy" width="1080" height="520"></div>
+<div class="card-body"><div class="meta">Creator tools <i> / </i> Hackathon</div>
+<h2 class="card-title"><a href="project-youtube-agent.html">YouTube Agent</a></h2><p>An assistant that helps creators research similar channels and turn what they learn into video ideas, drafts and thumbnails.</p><ul class="tags"><li>FrontMCP</li><li>Google ADK</li><li>TypeScript</li></ul>
+<div class="card-links"><a aria-label="Read the YouTube Agent case study" class="case-link" href="project-youtube-agent.html">Case study<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="quiet" href="https://github.com/maxxie114/Autonomous-Youtube-analysis-agent">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div></div></article></section><section class="cta"><h2>Let’s build something useful.</h2><a class="button primary" href="contact.html">Get in touch<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a></section></main>
+<footer><div class="wrap footer-inner"><span>© 2026 Max Xie</span><nav aria-label="Footer"><a class="" href="https://github.com/maxxie114">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><a class="" href="https://www.linkedin.com/in/peixi-xie/">LinkedIn<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><a class="" href="mailto:maxxie114@qubemc.ai">Email</a><a class="" href="contact.html">Contact</a></nav></div></footer></body></html>

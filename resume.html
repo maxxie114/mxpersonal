@@ -1,216 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Resume — Peixi "Max" Xie</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        /* Artistic resume styles */
-        body { background: linear-gradient(180deg,#f7f9fc 0%, #ffffff 40%); }
-        .resume-shell { max-width: 1100px; margin: 3rem auto; box-shadow: 0 8px 30px rgba(35,40,50,0.08); border-radius: 12px; overflow: hidden; }
-        .resume-left { background: #0b1220; color: #fff; padding: 2.5rem; }
-        .resume-left .avatar { width:160px; height:160px; border-radius:50%; object-fit:cover; border:4px solid rgba(255,255,255,0.12); }
-        .name { font-size:1.6rem; font-weight:700; margin-top:1rem; }
-        .title { color:#9fb3d6; margin-bottom:0.75rem; }
-        .contact a { color:#cfe6ff; text-decoration:none; }
-        .section-title { color:#0b1220; border-left:4px solid #0b66ff; padding-left:0.75rem; margin-bottom:1rem; }
-        .timeline { position:relative; padding-left:1.25rem; }
-        .timeline:before { content:''; position:absolute; left:0.25rem; top:0; bottom:0; width:3px; background:linear-gradient(#0b66ff,#7db8ff); border-radius:2px; }
-        .timeline-item { position:relative; margin-bottom:1.5rem; padding-left:1rem; }
-        .timeline-item:before { content:''; position:absolute; left:-0.3rem; top:6px; width:12px; height:12px; border-radius:50%; background:#fff; border:3px solid #0b66ff; }
-        .job-title { font-weight:700; color:#14223b; }
-        .job-meta { color:#6c7a89; font-size:0.9rem; }
-        .award-meta { color:#0b66ff; font-weight:600; font-size:0.85rem; }
-        .skill-badge { display:inline-block; margin:0.15rem 0.25rem; background:#eef6ff; color:#073566; padding:0.35rem 0.6rem; border-radius:999px; font-weight:600; font-size:0.85rem; }
-        .left-list { list-style:none; padding:0; margin-top:1rem; }
-        .left-list li { margin:0.6rem 0; color:#dbeeff; }
-        @media (max-width: 768px){ .resume-shell{ margin:1rem; } .resume-left{ text-align:center } .timeline:before{ left:0.5rem } }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Peixi "Max" Xie</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="resume-shell d-flex flex-column flex-md-row">
-        <aside class="resume-left col-md-4">
-            <div class="text-center">
-                <img src="assets/img/max_selfie.jpg" alt="Max selfie" class="avatar">
-                <div class="name">Peixi "Max" Xie</div>
-                <div class="title">Computational Linguist</div>
-                <div class="contact mt-3">
-                    <div><i class="fas fa-envelope me-2"></i><a href="mailto:maxxie114@gmail.com">maxxie114@gmail.com</a></div>
-                    <div><i class="fas fa-phone me-2"></i>(415) 364-8613 <span style="color:#9fb3d6;">(business)</span></div>
-                    <div><i class="fas fa-location-dot me-2"></i>San Francisco, CA</div>
-                    <div><i class="fab fa-linkedin me-2"></i><a href="https://www.linkedin.com/in/peixi-xie/" target="_blank" rel="noopener">linkedin.com/in/peixi-xie</a></div>
-                    <div><i class="fab fa-github me-2"></i><a href="https://github.com/maxxie114" target="_blank" rel="noopener">github.com/maxxie114</a></div>
-                    <div><i class="fas fa-globe me-2"></i><a href="https://www.mxpersonal.com/" target="_blank" rel="noopener">mxpersonal.com</a></div>
-                    <div class="mt-2"><a href="resume_ai_linguist.pdf" class="btn btn-sm btn-outline-light" style="font-weight:600;" target="_blank"><i class="fas fa-download me-1"></i>Download Resume</a></div>
-                </div>
-            </div>
-
-            <hr style="border-color: rgba(255,255,255,0.06)">
-
-            <h6 class="text-uppercase" style="color:#9fb3d6">Skills</h6>
-            <div>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">spaCy</span>
-                <span class="skill-badge">NLTK</span>
-                <span class="skill-badge">PyTorch</span>
-                <span class="skill-badge">scikit-learn</span>
-                <span class="skill-badge">TensorFlow</span>
-                <span class="skill-badge">LangChain</span>
-                <span class="skill-badge">Google ADK</span>
-                <span class="skill-badge">pandas</span>
-                <span class="skill-badge">NumPy</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">JavaScript</span>
-                <span class="skill-badge">Java</span>
-            </div>
-
-            <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Tools</h6>
-            <ul class="left-list">
-                <li><i class="fas fa-code me-2"></i>Git / GitHub</li>
-                <li><i class="fab fa-docker me-2"></i>Docker</li>
-                <li><i class="fas fa-terminal me-2"></i>Linux</li>
-                <li><i class="fas fa-flask me-2"></i>Flask</li>
-            </ul>
-
-            <h6 class="mt-3 text-uppercase" style="color:#9fb3d6">Languages</h6>
-            <ul class="left-list">
-                <li>English (Fluent)</li>
-                <li>Mandarin (Native)</li>
-                <li>Cantonese (Native)</li>
-                <li>Spanish (Intermediate)</li>
-            </ul>
-        </aside>
-
-        <section class="p-4 flex-fill">
-            <div class="container-fluid">
-                <div class="mb-4">
-                    <h2 class="section-title">Profile</h2>
-                    <p>Computational linguist with experience in LLM evaluation, AI-assisted text simplification, multilingual NLP, and linguistic data analysis.</p>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Research &amp; Academic Experience</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2024 – Present</span></div>
-                            <div class="job-meta">ECOLE Lab, San Francisco State University — AI-Assisted Text Simplification Research Project</div>
-                            <ul>
-                                <li>Investigate how large language models simplify complex texts and how AI-generated simplifications differ from human language processing in meaning, linguistic structure, and readability.</li>
-                                <li>Build Python-based NLP, evaluation, and data-analysis workflows to process source texts, examine model-generated simplifications, and identify recurring linguistic patterns.</li>
-                                <li>Apply corpus-based, experimental, and computational methods to evaluate simplification quality and support research documentation and project development.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="job-title">Instructional Support Assistant <span class="job-meta">• Sep 2025 – Dec 2025</span></div>
-                            <div class="job-meta">San Francisco State University</div>
-                            <ul>
-                                <li>Supported introductory linguistics courses through classroom assistance, office hours, student Q&amp;A, and assignment feedback.</li>
-                                <li>Evaluated assignments and exams using standardized rubrics and developed lightweight computational demonstrations to explain linguistic concepts.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="job-title">Research Assistant <span class="job-meta">• Sep 2022 – Jun 2023</span></div>
-                            <div class="job-meta">University of California, Santa Cruz</div>
-                            <ul>
-                                <li>Built Python workflows for ultrasound-based speech research, automating experimental trials and synchronizing multimodal speech data.</li>
-                                <li>Used DeepLabCut and Articulate Assistant Advanced for CNN-based tongue-contour tracking from ultrasound video.</li>
-                                <li>Applied Whisper and LLM-assisted post-processing to streamline transcription, correction, and data labeling; presented the project at the UCSC Linguistics Undergraduate Research Conference.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Projects</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="job-title">Dynamic Benchmarking of Large Language Models <span class="job-meta">• M.A. Capstone</span></div>
-                            <ul>
-                                <li>Analyzed static, dynamic, and metalinguistic LLM evaluation methods, focusing on benchmark contamination, reasoning quality, and genuine language understanding.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="job-title">Crypto Risk Analysis Agent <span class="job-meta">• Production Agents Hackathon</span></div>
-                            <div class="award-meta">Best Use of TRM Labs, 1st Place</div>
-                            <div class="job-meta">GitHub: <a href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent" target="_blank" rel="noopener">github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent</a></div>
-                            <ul>
-                                <li>Built a tool-calling LLM agent that integrated structured API data and external sources to process noisy inputs, evaluate cryptocurrency risk signals, and generate interpretable user-facing summaries.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="job-title">Additional AI Hackathon Awards</div>
-                            <ul>
-                                <li><span class="award-meta">2nd Place</span> — REAL Agent Challenge, AGI Inc. x OpenAI x Lovable Hackathon.</li>
-                                <li><span class="award-meta">1st Place</span> — Frontegg Sponsor Prize, Self-Evolving Agents Hackathon.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Employment</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="job-title">Full Stack Developer &amp; Linux Server Administrator <span class="job-meta">• Jun 2020 – Present</span></div>
-                            <div class="job-meta">QubeMC LLC — San Francisco, CA</div>
-                            <ul>
-                                <li>Develop and maintain customer-facing web applications, backend APIs, internal tools, and automation workflows for live hosting and software services.</li>
-                                <li>Administer Linux infrastructure, troubleshoot production issues, and improve system reliability while reducing repetitive operational work.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="job-title">Website Maintainer / Bilingual Content Workflow Support (Part-time) <span class="job-meta">• Aug 2024 – Present</span></div>
-                            <div class="job-meta">Episcopal Church of the Incarnation — San Francisco, CA</div>
-                            <ul>
-                                <li>Maintain multiple WordPress websites through content publishing, bug fixes, UI updates, accessibility improvements, and bilingual English-Chinese content support.</li>
-                                <li>Build LLM-assisted translation and communication workflows using OpenAI Agent Builder, LangChain, and automation tools to support weekly publishing and outbound messaging.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h2 class="section-title">Education</h2>
-                    <div class="job-title">M.A. Linguistics, Computational Linguistics Concentration <span class="job-meta">• Jun 2026 | GPA: 3.6</span></div>
-                    <div class="job-meta">San Francisco State University</div>
-                    <div class="job-title mt-3">B.A. Linguistics <span class="job-meta">• Jun 2024</span></div>
-                    <div class="job-meta">University of California, Santa Cruz</div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <footer class="text-center p-3 mt-4">
-        <p>&copy; 2025 Peixi Xie. All rights reserved.</p>
-    </footer>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Résumé · Max Xie</title><meta name="description" content="Peixi Max Xie’s résumé in computational linguistics, research and engineering.">
+<link rel="canonical" href="https://www.mxpersonal.com/resume.html"><meta property="og:url" content="https://www.mxpersonal.com/resume.html"><meta property="og:type" content="website">
+<link rel="describedby" href="llms.txt" title="Portfolio guide for agents">
+<meta property="og:title" content="Résumé · Max Xie"><meta property="og:description" content="Peixi Max Xie’s résumé in computational linguistics, research and engineering.">
+<meta property="og:image" content="https://www.mxpersonal.com/assets/portfolio/social.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/portfolio/icon.svg"><link rel="stylesheet" href="assets/css/portfolio-v2.css"><script defer src="assets/js/portfolio-v2.js"></script>
+</head><body><a class="skip" href="#content">Skip to content</a><header><div class="wrap mast"><a class="brand" href="index.html" aria-label="Max Xie, home"><span class="monogram" aria-hidden="true">mx</span>Max Xie<span class="slash" aria-hidden="true">/</span></a>
+<nav id="navigation" aria-label="Main navigation"><a class="navlink  " href="about.html">About</a><a class="navlink  " href="projects.html">Projects</a><a class="navlink  " href="publications.html">Research</a><a class="navlink chosen " href="resume.html" aria-current="page">Résumé</a><a class="navlink  contact-link" href="contact.html">Contact<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav><div class="nav-tools">
+<button id="theme" hidden aria-label="Light theme" aria-pressed="false" title="Light theme"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0"/></svg></button>
+<button id="menu" hidden aria-label="Navigation menu" aria-expanded="false" aria-controls="navigation"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+</div></div></header><main id="content" class="wrap"><div class="resume-hero">
+<div><div class="eyebrow"><span></span>Résumé</div><h1>Peixi "Max" Xie</h1>
+<p class="intro">Computational Linguist</p>
+<div class="actions"><a class="button primary" href="resume_ai_linguist.pdf" download>Download résumé (PDF)</a></div></div>
+<img src="assets/portfolio/max.webp" alt="Portrait of Max Xie" width="156" height="156">
+</div>
+<div class="resume-layout">
+<div class="resume-history">
+<section class="resume-section">
+<h2>Profile</h2>
+<p>Computational linguist with experience in LLM evaluation, AI-assisted text simplification, multilingual NLP, and linguistic data analysis.</p>
+</section>
+<section class="resume-section">
+<h2>Research &amp; Academic Experience</h2>
+<div class="resume-entry">
+<h3>Research Assistant</h3>
+<p class="byline">Sep 2024 – Present</p>
+<p class="resume-org">ECOLE Lab, San Francisco State University — AI-Assisted Text Simplification Research Project</p>
+<ul>
+  <li>Investigate how large language models simplify complex texts and how AI-generated simplifications differ from human language processing in meaning, linguistic structure, and readability.</li>
+  <li>Build Python-based NLP, evaluation, and data-analysis workflows to process source texts, examine model-generated simplifications, and identify recurring linguistic patterns.</li>
+  <li>Apply corpus-based, experimental, and computational methods to evaluate simplification quality and support research documentation and project development.</li>
+</ul>
+</div>
+<div class="resume-entry">
+<h3>Instructional Support Assistant</h3>
+<p class="byline">Sep 2025 – Dec 2025</p>
+<p class="resume-org">San Francisco State University</p>
+<ul>
+  <li>Supported introductory linguistics courses through classroom assistance, office hours, student Q&amp;A, and assignment feedback.</li>
+  <li>Evaluated assignments and exams using standardized rubrics and developed lightweight computational demonstrations to explain linguistic concepts.</li>
+</ul>
+</div>
+<div class="resume-entry">
+<h3>Research Assistant</h3>
+<p class="byline">Sep 2022 – Jun 2023</p>
+<p class="resume-org">University of California, Santa Cruz</p>
+<ul>
+  <li>Built Python workflows for ultrasound-based speech research, automating experimental trials and synchronizing multimodal speech data.</li>
+  <li>Used DeepLabCut and Articulate Assistant Advanced for CNN-based tongue-contour tracking from ultrasound video.</li>
+  <li>Applied Whisper and LLM-assisted post-processing to streamline transcription, correction, and data labeling; presented the project at the UCSC Linguistics Undergraduate Research Conference.</li>
+</ul>
+</div>
+</section>
+<section class="resume-section">
+<h2>Projects</h2>
+<div class="resume-entry">
+<h3>Dynamic Benchmarking of Large Language Models</h3>
+<p class="byline">M.A. Capstone</p>
+<ul>
+  <li>Analyzed static, dynamic, and metalinguistic LLM evaluation methods, focusing on benchmark contamination, reasoning quality, and genuine language understanding.</li>
+</ul>
+</div>
+<div class="resume-entry">
+<h3>Crypto Risk Analysis Agent</h3>
+<p class="byline">Production Agents Hackathon</p>
+<p class="resume-award">1st place for Best Use of TRM Labs · 3rd place for Best Use of Sanity</p>
+<p class="resume-org">GitHub: <a href="https://github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent" target="_blank" rel="noopener">github.com/maxxie114/Automatic-Crypto-Risk-Analysis-Agent</a></p>
+<ul>
+  <li>Built a tool-calling LLM agent that integrated structured API data and external sources to process noisy inputs, evaluate cryptocurrency risk signals, and generate interpretable user-facing summaries.</li>
+</ul>
+</div>
+<div class="resume-entry">
+<h3>Additional AI Hackathon Awards</h3>
+<ul>
+  <li><span class="resume-award">1st Place</span> — Best Global Submission, Nevermined, for Intel Marketplace.</li>
+  <li><span class="resume-award">3rd Place</span> — Best Use of Render for CompanyIntel AI.</li>
+  <li><span class="resume-award">1st Place</span> — Best Use of You.com APIs for Litmus.</li>
+  <li><span class="resume-award">2nd Place</span> — REAL Agent Challenge, AGI Inc. x OpenAI x Lovable Hackathon.</li>
+  <li><span class="resume-award">1st Place</span> — Frontegg Sponsor Prize, Self-Evolving Agents Hackathon.</li>
+</ul>
+<p><a href="index.html#recognition">View award details and submissions</a></p>
+</div>
+</section>
+<section class="resume-section">
+<h2>Employment</h2>
+<div class="resume-entry">
+<h3>Full Stack Developer &amp; Linux Server Administrator</h3>
+<p class="byline">Jun 2020 – Present</p>
+<p class="resume-org">QubeMC LLC — San Francisco, CA</p>
+<ul>
+  <li>Built web applications, backend APIs, and automation workflows for game-server operations. Now focusing QubeMC on AI-assisted game-server management.</li>
+  <li>Administer Linux infrastructure, troubleshoot production issues, and improve system reliability while reducing repetitive operational work.</li>
+</ul>
+</div>
+<div class="resume-entry">
+<h3>Website Maintainer / Bilingual Content Workflow Support (Part-time)</h3>
+<p class="byline">Aug 2024 – Present</p>
+<p class="resume-org">Episcopal Church of the Incarnation — San Francisco, CA</p>
+<ul>
+  <li>Maintain multiple WordPress websites through content publishing, bug fixes, UI updates, accessibility improvements, and bilingual English-Chinese content support.</li>
+  <li>Build LLM-assisted translation and communication workflows using OpenAI Agent Builder, LangChain, and automation tools to support weekly publishing and outbound messaging.</li>
+</ul>
+</div>
+</section>
+<section class="resume-section">
+<h2>Education</h2>
+<div class="resume-entry">
+<h3>M.A. Linguistics, Computational Linguistics Concentration</h3>
+<p class="byline">Jun 2026 | GPA: 3.6</p>
+<p class="resume-org">San Francisco State University</p>
+</div>
+<div class="resume-entry">
+<h3>B.A. Linguistics</h3>
+<p class="byline">Jun 2024</p>
+<p class="resume-org">University of California, Santa Cruz</p>
+</div>
+</section>
+</div>
+<aside class="resume-facts-panel" aria-label="Contact and qualifications">
+<section><h2>Contact</h2><ul class="resume-contacts">
+  <li><a href="mailto:maxxie114@gmail.com">maxxie114@gmail.com</a></li>
+  <li>(415) 364-8613 (business)</li>
+  <li>San Francisco, CA</li>
+  <li><a href="https://www.linkedin.com/in/peixi-xie/" target="_blank" rel="noopener">linkedin.com/in/peixi-xie</a></li>
+  <li><a href="https://github.com/maxxie114" target="_blank" rel="noopener">github.com/maxxie114</a></li>
+  <li><a href="https://www.mxpersonal.com/" target="_blank" rel="noopener">mxpersonal.com</a></li>
+</ul></section>
+<section><h2>Skills</h2><ul class="tags">
+  <li>Python</li>
+  <li>spaCy</li>
+  <li>NLTK</li>
+  <li>PyTorch</li>
+  <li>scikit-learn</li>
+  <li>TensorFlow</li>
+  <li>LangChain</li>
+  <li>Google ADK</li>
+  <li>pandas</li>
+  <li>NumPy</li>
+  <li>SQL</li>
+  <li>JavaScript</li>
+  <li>Java</li>
+</ul></section>
+<section><h2>Tools</h2><ul class="resume-facts">
+  <li>Git / GitHub</li>
+  <li>Docker</li>
+  <li>Linux</li>
+  <li>Flask</li>
+</ul></section>
+<section><h2>Languages</h2><ul class="resume-facts">
+  <li>English (Fluent)</li>
+  <li>Mandarin (Native)</li>
+  <li>Cantonese (Native)</li>
+  <li>Spanish (Intermediate)</li>
+</ul></section>
+</aside>
+</div>
+</main>
+<footer><div class="wrap footer-inner"><span>© 2026 Max Xie</span><nav aria-label="Footer"><a class="" href="https://github.com/maxxie114">GitHub<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><a class="" href="https://www.linkedin.com/in/peixi-xie/">LinkedIn<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a><a class="" href="mailto:maxxie114@qubemc.ai">Email</a><a class="" href="contact.html">Contact</a></nav></div></footer></body></html>

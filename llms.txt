@@ -1,0 +1,40 @@
+# Peixi (Max) Xie
+
+> Portfolio of a San Francisco AI engineer and computational linguist. The site documents engineering projects, research at San Francisco State and UC Santa Cruz, and team hackathon awards.
+
+## Portfolio
+
+- [About Max](https://www.mxpersonal.com/about.html): Education, experience and research background.
+- [Project index](https://www.mxpersonal.com/projects.html): Browse project case studies by topic.
+- [Research index](https://www.mxpersonal.com/publications.html): Studies, lab work, conference poster and patent.
+- [Hackathon recognition](https://www.mxpersonal.com/index.html#recognition): Placements, projects and award records.
+- [QubeMC](https://www.mxpersonal.com/index.html#qubemc): Max’s startup and its focus on AI for gaming and game-server management.
+- [Résumé](https://www.mxpersonal.com/resume.html): Professional experience, education and downloadable résumé.
+- [Contact](https://www.mxpersonal.com/contact.html): Public contact channels.
+
+## Research
+
+- [Dynamic Benchmarking of LLMs: Moving Beyond Static Evaluation](https://www.mxpersonal.com/project-dynamic-llm-benchmarking.html): Four models took three kinds of tests covering static knowledge, dynamic reasoning and metalinguistic analysis. Changing the benchmark changed which model led.
+- [AI-Assisted Text Simplification](https://www.mxpersonal.com/research-text-simplification.html): How much of a passage’s meaning survives when a language model rewrites it for easier reading?
+- [Production of English /r/ by Prosodic Position](https://www.mxpersonal.com/research-english-r-prosodic-position.html): An ultrasound study of how five English speakers shaped their tongues for /r/ at the beginning of phrases, words and syllables.
+- [Electronic Remote-Control Lock](https://www.mxpersonal.com/research-electronic-remote-control-lock.html): A door lock that moves the bolt electronically while keeping the locking mechanism inside the door.
+- [Capstone paper (PDF)](https://www.mxpersonal.com/dynamic-benchmarking.pdf): Full text of the M.A. capstone.
+- [English /r/ conference poster (PDF)](https://www.mxpersonal.com/assets/portfolio/english-r-prosodic-position.pdf): Original poster with ultrasound images and tongue contours.
+
+## Project case studies
+
+- [FoxStar Agent](https://www.mxpersonal.com/project-foxstar.html): A production agent system for WeChat communities. FoxStar routes work across language models, delegates research to a background agent, and keeps a gaming guild’s rosters and attendance records in sync with its group chats.
+- [LoopLess](https://www.mxpersonal.com/project-loopless.html): A browser agent that remembers successful action sequences and tests whether it can reuse them on a later run.
+- [Graph Learning for Anti-Money Laundering](https://www.mxpersonal.com/project-aml-gnn.html): A comparison of transaction-graph models and tabular baselines for detecting rare laundering activity in IBM’s AML dataset.
+- [REAL Browser Agent Benchmark](https://www.mxpersonal.com/project-real-browser-benchmark.html): A benchmark harness that runs agents against 16 calendar, email, hotel-booking and networking tasks.
+- [Tracking Tongue Shape in Ultrasound](https://www.mxpersonal.com/project-ultrasound-tongue-tracking.html): Computer vision and ultrasound workflows for measuring how the tongue shapes the English /r/ sound.
+- [Machine Learning from Scratch](https://www.mxpersonal.com/project-ml-from-scratch.html): I worked out how a neural network learns on paper, then implemented it in Python. These five projects trace my experiments from individual weight updates to tool-calling agents and local inference.
+- [SwingSage](https://www.mxpersonal.com/project-swingsage.html): A paper-trading experiment that combines an LSTM price forecast with a language model’s reading of market indicators.
+- [Litmus](https://www.mxpersonal.com/project-litmus.html): A test bench for voice agents that brings call evaluations and integration checks into one review.
+- [Crypto Risk Analysis Agent](https://www.mxpersonal.com/project-crypto-risk-agent.html): An agent that connects wallet activity and token ownership data to explain concentration risk.
+- [Paigent Studio](https://www.mxpersonal.com/project-paigent-studio.html): A workflow editor that turns spoken or written requests into inspectable execution graphs.
+- [ClawGuard](https://www.mxpersonal.com/project-clawguard.html): An email intake layer that gives agents structured messages and risk flags.
+- [ReplicaLab](https://www.mxpersonal.com/project-replicalab.html): A planning environment where agents negotiate a replication study within a budget and schedule.
+- [Intel Marketplace](https://www.mxpersonal.com/project-intel-marketplace.html): An agent that buys information from other agents and sells briefings assembled from news, market data and social signals.
+- [CompanyIntel AI](https://www.mxpersonal.com/project-companyintel-ai.html): A company research tool that brings competitor information, financial indicators and technical documentation into a single report.
+- [YouTube Agent](https://www.mxpersonal.com/project-youtube-agent.html): An assistant that helps creators research similar channels and turn what they learn into video ideas, drafts and thumbnails.

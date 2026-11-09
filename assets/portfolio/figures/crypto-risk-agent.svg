@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 396" role="img" aria-labelledby="title desc">
+  <title id="title">Where the crypto risk agent gets its evidence</title>
+  <desc id="desc">DexScreener supplies market context, Helius supplies token holder balances and Moralis supplies wallet activity. The agent reads those sources through MCP tools to explain token concentration.</desc>
+  <rect width="820" height="396" fill="#f5f7f7"/>
+  <g fill="none" stroke="#64978e" stroke-width="3">
+    <path d="M237 77h30q20 0 20 20v80q0 20 20 20h27M237 197h97M237 317h30q20 0 20-20v-80q0-20 20-20h27M500 197h56"/>
+  </g>
+  <g fill="#fff" stroke="#9eb8b5" stroke-width="2">
+    <rect x="25" y="40" width="212" height="74" rx="9"/><rect x="25" y="160" width="212" height="74" rx="9"/><rect x="25" y="280" width="212" height="74" rx="9"/>
+    <rect x="334" y="160" width="166" height="74" rx="9"/><rect x="556" y="148" width="239" height="98" rx="9" fill="#d8ebe5"/>
+  </g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#193735">
+    <g font-size="23" font-weight="600">
+      <text x="131" y="72">DexScreener</text><text x="131" y="192">Helius</text><text x="131" y="312">Moralis</text>
+      <text x="417" y="204">MCP tools</text><text x="675" y="185">Risk agent</text>
+    </g>
+    <g font-size="17">
+      <text x="131" y="97">Market context</text><text x="131" y="217">Holder balances</text><text x="131" y="337">Wallet activity</text>
+      <text x="675" y="215">Explain concentration</text>
+    </g>
+  </g>
+</svg>
