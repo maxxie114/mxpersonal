@@ -30,6 +30,14 @@ RESEARCH = (
     ResearchEntry(CAP, PAPER_TITLE, "M.A. capstone · San Francisco State University (SFSU) · 2026",
                   "Four models took three kinds of tests covering static knowledge, dynamic reasoning and metalinguistic analysis. Changing the benchmark changed which model led.",
                   ("Read Paper", PAPER)),
+    ResearchEntry("research-inferential-metaphor.html", "Agentic Inferential Metaphor Identification",
+                  "ECOLE Lab · San Francisco State University (SFSU)",
+                  "Which metaphors help readers reason about how something works? I built a four-agent annotation pipeline to identify those expressions for ECOLE Lab’s research on text simplification.",
+                  ("View code on GitHub", GITHUB + "/metaphor_agent"), (
+                      ("What a metaphor lets a reader infer", "Consider the phrase “a bottleneck in the approval process.” The narrow neck of a bottle helps explain how one slow step can hold up everything behind it. If a simpler rewrite removes the metaphor, can the reader still infer why the delay spreads? The pipeline identifies expressions like these for closer study."),
+                      ("From a candidate to an annotation", "The first agent proposes possible metaphors. The second uses the lab’s annotation criteria to decide whether each expression supports an inference. The third extracts the exact words from the sentence. A fourth agent reviews the selection independently, and a final pass removes overlapping spans. The output links each retained phrase to its source sentence so a researcher can inspect the choice."),
+                      ("What changed across runs", "On a batch of 100 sentences, an early run kept common expressions that contributed little to the reader’s reasoning. Tightening the criteria too far left just one span. The fourth run produced 110 spans, which became 90 after deduplication. The repository includes the outputs from each run so readers can compare individual annotation decisions."),
+                  )),
     ResearchEntry("research-text-simplification.html", "AI-Assisted Text Simplification",
                   "ECOLE Lab · San Francisco State University (SFSU)",
                   "How much of a passage’s meaning survives when a language model rewrites it for easier reading?",
@@ -272,7 +280,7 @@ AWARDS = (
 )
 EXPERIENCE = (
     ("Current", "AI engineering", "I work on voice AI, agent workflows and evaluation."),
-    ("2024–2026", "Graduate research · SFSU", "In the ECOLE Lab I used Python to examine how language models simplify text. My M.A. capstone compared three ways to evaluate language models."),
+    ("2024–2026", "Graduate research · SFSU", "At ECOLE Lab I studied AI-assisted text simplification and built a four-agent system to annotate metaphors that help readers draw inferences. My M.A. capstone compared three ways to evaluate language models."),
     ("Fall 2025", "Instructional support · SFSU", "I supported introductory linguistics courses through office hours, assignment feedback and computational demonstrations."),
     ("2022–2024", "Linguistics · UC Santa Cruz", "I worked with ultrasound speech data and presented a poster on English /r/. I completed my B.A. in Linguistics in June 2024."),
     ("Since 2020", "Founder & developer · QubeMC", "My experience running Minecraft worlds shaped the direction I’m taking QubeMC. I’m focusing the company on AI for gaming, starting with tools to help operators troubleshoot and automate game-server maintenance."),
